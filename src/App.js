@@ -1,28 +1,33 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Project from "./pages/Project"
-import ProjectList from "./pages/ProjectList";
-import NewProject from "./pages/NewProject";
+import ProjectRoutes from "./routes/ProjectRoutes";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import "./styles.css";
 
 export default function App() {
   return (
     <>
-      {/* Place nav bar outside of routes - only the code inside Routes will be rerendered */}
+      {/* Place nav bar outside of Routes - only code inside Routes is rerendered */}
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <NavLink to="/projects">Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
       <Routes> 
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectList />} />
-        <Route path="/projects/:id" element={<Project />} />
-        <Route path="projects/new" element={<NewProject />} /> 
+        {/* ProjectRoutes contains all routes for projects, /* dynamically changes the route based on user input */}
+        <Route path="/projects/*" element={<ProjectRoutes />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </>
   );
