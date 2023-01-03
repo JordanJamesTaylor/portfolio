@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Project from "./pages/Project"
+import ProjectList from "./pages/ProjectList";
+import NewProject from "./pages/NewProject";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Place nav bar outside of routes - only the code inside Routes will be rerendered */}
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes> 
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectList />} />
+        <Route path="/projects/:id" element={<Project />} />
+        <Route path="projects/new" element={<NewProject />} /> 
+      </Routes>
+    </>
   );
 }
-
-export default App;
