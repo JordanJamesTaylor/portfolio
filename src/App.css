@@ -2,23 +2,36 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.navbar {
+  height: 600px;
+  color: black;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
+.links {
+  text-decoration: none;
+  display: inline;
+  padding: 20px 20px;
+  font-weight: 700;
   font-size: large;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.home {
+  height: 600px;
+  background-color:maroon;
+}
+
+.about {
+  height: 600px;
+  background-color:coral;
+}
+
+.projects {
+  height: 600px;
+  background-color:greenyellow;
+}
+
+.contact {
+  height: 600px;
+  background-color:deeppink;
 }
