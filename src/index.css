@@ -1,6 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: aqua;
+  min-height: 100vh;
+  font-family: 'Porter Sans Block', sans-serif;
+  display: flex;
+}
+/* Center application on ele with ID root, not the body el */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }

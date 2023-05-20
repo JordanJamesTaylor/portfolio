@@ -1,29 +1,28 @@
 import React, { Fragment, useRef } from "react";
 
-import Home from "./components/Home"
-import About from "./components/About";
-import Projects from "./components/Projects";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
 
 import "./App.css";
 
 export default function App() {
 
-  // init useRef hook
+  // init useRef hook for each section
   const home = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
 
   // grab window element and scroll to component
-  const scrollToSection = (elelmentRef) => {
+  const scrollToSection = (elementRef) => {
     window.scrollTo({
-        // scroll to top of ref element
-        top: elelmentRef.current.offsetTop,
-        // scroll effect
+        // scroll to top of selected section
+        top: elementRef.current.offsetTop,
         behavior: "smooth",
       }
     );
-  }
+  };
   
   return (
     <div className="App">
@@ -35,18 +34,18 @@ export default function App() {
           <li onClick={() => scrollToSection(contact)} className="links">Contact Me</li>
         </ul>
       </div>
-      <div ref={home} className="home">
-        <h2>HOME</h2>
-      </div>
-      <div ref={about} className="about">
-        <h2>ABOUT</h2>
-      </div>
-      <div ref={projects} className="projects">
-        <h2>PROJECTS</h2>
-      </div>
-      <div ref={contact} className="contact">
+      <section ref={home} className="home">
+        <Home />
+      </section>
+      <section ref={about} className="about">
+        <About />
+      </section>
+      <section ref={projects} className="projects">
+        <Projects />
+      </section>
+      <section ref={contact} className="contact">
         <h2>CONTACT</h2>
-      </div>
+      </section>
     </div>
   );
 };

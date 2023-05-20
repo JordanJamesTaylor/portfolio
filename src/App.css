@@ -17,21 +17,36 @@
 }
 
 .home {
-  height: 600px;
-  background-color:maroon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 25px;
+  border: 2px solid black
 }
 
 .about {
-  height: 600px;
-  background-color:coral;
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  margin-top: 25px;
+  border: 2px solid black
 }
 
 .projects {
-  height: 600px;
-  background-color:greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 25px;
+  border: 2px solid black
 }
 
 .contact {
-  height: 600px;
-  background-color:deeppink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 25px;
+  border: 2px solid black
 }
