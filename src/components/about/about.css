@@ -1,6 +1,7 @@
 .name {
     align-self: flex-start;
     padding-left: 10%;
+    font-family: 'Porter Sans Block';
 }
 
 .bio {

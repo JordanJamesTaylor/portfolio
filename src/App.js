@@ -1,21 +1,22 @@
 import React, { Fragment, useRef } from "react";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
 import "./App.css";
-import { createTheme, ThemeProvider } from "@mui/material";
 
 export default function App() {
 
   // change material ui them to custom theme
-  const theme = createTheme({
-    typography: {
-      fontFamily: [ 'Porter Sans Block', 'sans-serif'
-      ].join(','),
-    },
-  });
+  // const theme = createTheme({
+  //   typography: {
+  //     fontFamily: [ 'Porter Sans Block', 'sans-serif'
+  //     ].join(','),
+  //   },
+  // });
 
   // init useRef hook for each section
   const home = useRef(null);
@@ -34,7 +35,7 @@ export default function App() {
   };
   
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
       <div className="App">
       <div className="navbar">
         <ul id="navbar">
@@ -54,9 +55,9 @@ export default function App() {
         <Projects />
       </section>
       <section ref={contact} className="contact">
-        <h2>CONTACT</h2>
+        <Contact />
       </section>
       </div>
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 };
