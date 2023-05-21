@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: navy;
+  background-color: #08003B;
 }
 
 /* Center application on ele with ID root, not the body el */

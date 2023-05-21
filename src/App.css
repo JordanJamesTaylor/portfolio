@@ -1,12 +1,13 @@
 .App {
   text-align: center;
+  min-width: 100vw    ;
 }
 
 .navbar {
   height: 40px;
   position: sticky; 
   top: 0;
-  padding: 10px;
+  padding-top: 10px;
   color: black;
   background-color: aliceblue;
   border: solid 2px;
@@ -21,20 +22,38 @@
   cursor: pointer;
 }
 
-.home {
+.header-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  margin-top: 25px;
+  min-width: 100%;
+}
+/* .header {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
 }
 
+div > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 80%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+} */
+
+img {
+    max-width: 100%
+} */
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  margin-top: 25px;
 }
 
 .projects {

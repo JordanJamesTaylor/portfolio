@@ -1,12 +1,12 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
-import "./about.css";
+import './about.css';
 
 export default function About() {
 return (
   <Fragment>
-    <h1 className="name">Hi, I'm Jordan Taylor</h1>
-    <div className="bio">
+    <h1 className='name'>Hi, I'm Jordan Taylor</h1>
+    <div className='bio'>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras semper auctor neque. Aliquam nulla facilisi cras fermentum odio eu feugiat. Tellus at urna condimentum mattis pellentesque id nibh tortor. At consectetur lorem donec massa sapien faucibus et molestie. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Sit amet justo donec enim diam vulputate ut pharetra. In dictum non consectetur a erat nam. Dictum fusce ut placerat orci nulla. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Orci a scelerisque purus semper eget duis at. Facilisis volutpat est velit egestas. Tempus urna et pharetra pharetra massa massa ultricies mi. At quis risus sed vulputate odio ut. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Nibh sed pulvinar proin gravida. Scelerisque eu ultrices vitae auctor eu. Gravida in fermentum et sollicitudin ac orci. Ac ut consequat semper viverra nam libero justo laoreet.
     </p>
     <p>

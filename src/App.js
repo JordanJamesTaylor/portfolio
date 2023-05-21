@@ -1,12 +1,12 @@
-import React, { Fragment, useRef } from "react";
-import { createTheme, ThemeProvider } from "@mui/material";
+import React, { Fragment, useRef } from 'react';
+import { createTheme, ThemeProvider } from '@mui/material';
 
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
+import Header from './components/header/Header';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 
-import "./App.css";
+import './App.css';
 
 export default function App() {
 
@@ -19,7 +19,7 @@ export default function App() {
   // });
 
   // init useRef hook for each section
-  const home = useRef(null);
+  const header = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
@@ -29,32 +29,32 @@ export default function App() {
     window.scrollTo({
         // scroll to top of selected section
         top: elementRef.current.offsetTop,
-        behavior: "smooth",
+        behavior: 'smooth',
       },
     );
   };
   
   return (
     // <ThemeProvider theme={theme}>
-      <div className="App">
-      <div className="navbar">
-        <ul id="navbar">
-          <li onClick={() => scrollToSection(home)} className="links">Home</li>
-          <li onClick={() => scrollToSection(about)} className="links">About</li>
-          <li onClick={() => scrollToSection(projects)} className="links">Projects</li>
-          <li onClick={() => scrollToSection(contact)} className="links">Contact Me</li>
+      <div className='App'>
+      {/* <div className='navbar'>
+        <ul id='navbar'>
+          <li onClick={() => scrollToSection(header)} className='links'>Header</li>
+          <li onClick={() => scrollToSection(about)} className='links'>About</li>
+          <li onClick={() => scrollToSection(projects)} className='links'>Projects</li>
+          <li onClick={() => scrollToSection(contact)} className='links'>Contact Me</li>
         </ul>
-      </div>
-      <section ref={home} className="home">
-        <Home />
+      </div> */}
+      <section ref={header} className='header-container'>
+        <Header />
       </section>
-      <section ref={about} className="about">
+      <section ref={about} className='about'>
         <About />
       </section>
-      <section ref={projects} className="projects">
+      <section ref={projects} className='projects'>
         <Projects />
       </section>
-      <section ref={contact} className="contact">
+      <section ref={contact} className='contact'>
         <Contact />
       </section>
       </div>
