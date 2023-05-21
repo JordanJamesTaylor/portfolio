@@ -1,9 +1,10 @@
 body {
+  display: flex;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  font-family: 'Porter Sans Block', sans-serif;
-  display: flex;
+  font-family: 'Porter Sans Block';
+  background-color: navy;
 }
 /* Center application on ele with ID root, not the body el */
 #root {

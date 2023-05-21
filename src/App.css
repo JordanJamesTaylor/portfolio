@@ -3,14 +3,19 @@
 }
 
 .navbar {
-  height: 600px;
+  height: 40px;
+  position: sticky; 
+  top: 0;
+  padding: 10px;
   color: black;
+  background-color: aliceblue;
+  border: solid 2px;
 }
 
 .links {
   text-decoration: none;
   display: inline;
-  padding: 20px 20px;
+  padding: 20px;
   font-weight: 700;
   font-size: large;
   cursor: pointer;
@@ -22,15 +27,14 @@
   align-items: center;
   flex-grow: 1;
   margin-top: 25px;
-  border: 2px solid black
 }
 
 .about {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
   flex-grow: 1;
   margin-top: 25px;
-  border: 2px solid black
 }
 
 .projects {
@@ -38,8 +42,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  margin-top: 25px;
-  border: 2px solid black
+  margin: 25px 2% 0 2%;
 }
 
 .contact {
@@ -48,5 +51,4 @@
   align-items: center;
   flex-grow: 1;
   margin-top: 25px;
-  border: 2px solid black
 }

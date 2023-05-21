@@ -5,8 +5,17 @@ import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 
 import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 export default function App() {
+
+  // change material ui them to custom theme
+  const theme = createTheme({
+    typography: {
+      fontFamily: [ 'Porter Sans Block', 'sans-serif'
+      ].join(','),
+    },
+  });
 
   // init useRef hook for each section
   const home = useRef(null);
@@ -20,12 +29,13 @@ export default function App() {
         // scroll to top of selected section
         top: elementRef.current.offsetTop,
         behavior: "smooth",
-      }
+      },
     );
   };
   
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <div className="App">
       <div className="navbar">
         <ul id="navbar">
           <li onClick={() => scrollToSection(home)} className="links">Home</li>
@@ -46,6 +56,7 @@ export default function App() {
       <section ref={contact} className="contact">
         <h2>CONTACT</h2>
       </section>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 };
