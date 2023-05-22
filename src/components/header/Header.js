@@ -40,10 +40,10 @@ export default function Header({ about, projects, contact, scrollToSection }) {
                 <p>
                     Software Engineer, with experience in JavaScript, Typescript, Node.js, React, Next.js, and Ruby, pursuing a career as a full stack developer. 
                 </p>
-                <a href='https://github.com/JordanJamesTaylor'>
+                <a href='https://github.com/JordanJamesTaylor' target='_blank'>
                     <img className='link-icons' src={require('../../assests/github-icon.png')} />
                 </a>
-                <a href='https://www.linkedin.com/in/jordan-taylor-903471242/   '>
+                <a href='https://www.linkedin.com/in/jordan-taylor-903471242/' target='_blank'>
                     <img className='link-icons' src={require('../../assests/linkedin-icon.png')} />
                 </a>
             </div>

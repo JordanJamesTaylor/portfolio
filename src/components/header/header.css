@@ -25,6 +25,7 @@
     padding-left: 60%;
     z-index: 100;
     font-family: 'Porter Sans Block', sans-serif;
+    color: white;
     transform-origin: 0 0;
     transform: rotate(-30deg);
 }

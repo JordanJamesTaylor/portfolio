@@ -1,9 +1,15 @@
 .name {
     align-self: flex-start;
-    padding-left: 10%;
+    padding-left: 18%;
     font-family: 'Porter Sans Block';
+    color: white;
 }
 
 .bio {
-    padding: 0 15% 0 15%;
+    max-width: auto;
+    align-self: center;
+    color: white;
+    padding: 0 33% 0 33%;
+    text-align: left;
 }
+
