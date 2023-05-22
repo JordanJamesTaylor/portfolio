@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-div > img {
+/* div > img {
     display: block;
     position: absolute;
     top: 50%;
@@ -32,10 +32,6 @@ div > img {
 } */
 
 .header-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1; */
   position: relative;
 }
 

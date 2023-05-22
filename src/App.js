@@ -35,25 +35,18 @@ export default function App() {
   
   return (
       <div className='App'>
-      {/* <div className='navbar'>
-        <ul id='navbar'>
-          <li onClick={() => scrollToSection(about)} className='links'>About</li>
-          <li onClick={() => scrollToSection(projects)} className='links'>Projects</li>
-          <li onClick={() => scrollToSection(contact)} className='links'>Contact Me</li>
-        </ul>
-      </div> */}
-      <section className='header-container'>
-        <Header about={about} projects={projects} contact={contact} scrollToSection={scrollToSection}/>
-      </section>
-      <section ref={about} className='about-container'>
-        <About />
-      </section>
-      <section ref={projects} className='projects-container'>
-        <Projects />
-      </section>
-      <section ref={contact} className='contact-container'>
-        <Contact />
-      </section>
+        <section className='header-container'>
+          <Header about={about} projects={projects} contact={contact} scrollToSection={scrollToSection}/>
+        </section>
+        <section ref={about} className='about-container'>
+          <About />
+        </section>
+        <section ref={projects} className='projects-container'>
+          <Projects />
+        </section>
+        <section ref={contact} className='contact-container'>
+          <Contact />
+        </section>
       </div>
   );
 };

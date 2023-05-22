@@ -3,40 +3,61 @@
     max-height: 100vh;
 }
 
+.intro {
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    text-align: left;
+    z-index: 100;
+    left: 75%;
+    top: 50%;
+    margin-right: 5%;
+    color: white;
+}
+
+.link-icons {
+    margin: 5px 10px 2px 5px;
+}
+
 .titles {
     position: absolute;
+    margin-top: 0;
+    padding-left: 60%;
     z-index: 100;
+    font-family: 'Porter Sans Block', sans-serif;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
 }
 
 .sun {
     position: absolute;
-    left: 5%;
-    top: 16%;
+    left: 0%;
+    top: 2%;
     transition: all .2s ease-in-out; 
 }
 
-.green-blue-planet {
+.contact-planet {
     position: absolute;
-    left: 50%;
-    top: 25%;
-    transition: all .2s ease-in-out; 
-}
-
-.green-pink-planet {
-    position: absolute;
-    left: 20%;
+    left: 52%;
     top: 20%;
     transition: all .2s ease-in-out; 
 }
 
-.red-blue-planet {
+.about-planet {
     position: absolute;
-    left: 30%;
-    top: 50%;
+    left: 25%;
+    top: 6%;
     transition: all .2s ease-in-out; 
 }
 
-.sun:hover {
+.projects-planet {
+    position: absolute;
+    left: 30%;
+    top: 42%;
+    transition: all .2s ease-in-out; 
+}
+
+.sun:hover, .about-planet:hover, .projects-planet:hover, .contact-planet:hover, .link-icons:hover{
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
@@ -44,29 +65,29 @@
     transform: scale(1.1);
 }
 
-.green-blue-planet:hover {
+/* .contact-planet:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
     border-radius: 100px;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 
-.green-pink-planet:hover {
+.about-planet:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
     border-radius: 100px;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 
-.red-blue-planet:hover {
+.projects-planet:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
     border-radius: 120px;
-    transform: scale(1.3);
-}
+    transform: scale(1.2);
+} */
 
