@@ -19,7 +19,6 @@ export default function App() {
   // });
 
   // init useRef hook for each section
-  const header = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
@@ -35,29 +34,26 @@ export default function App() {
   };
   
   return (
-    // <ThemeProvider theme={theme}>
       <div className='App'>
       {/* <div className='navbar'>
         <ul id='navbar'>
-          <li onClick={() => scrollToSection(header)} className='links'>Header</li>
           <li onClick={() => scrollToSection(about)} className='links'>About</li>
           <li onClick={() => scrollToSection(projects)} className='links'>Projects</li>
           <li onClick={() => scrollToSection(contact)} className='links'>Contact Me</li>
         </ul>
       </div> */}
-      <section ref={header} className='header-container'>
-        <Header />
+      <section className='header-container'>
+        <Header about={about} projects={projects} contact={contact} scrollToSection={scrollToSection}/>
       </section>
-      <section ref={about} className='about'>
+      <section ref={about} className='about-container'>
         <About />
       </section>
-      <section ref={projects} className='projects'>
+      <section ref={projects} className='projects-container'>
         <Projects />
       </section>
-      <section ref={contact} className='contact'>
+      <section ref={contact} className='contact-container'>
         <Contact />
       </section>
       </div>
-    // </ThemeProvider>
   );
 };

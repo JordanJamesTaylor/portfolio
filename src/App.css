@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  min-width: 100vw    ;
 }
 
 .navbar {
@@ -22,20 +21,6 @@
   cursor: pointer;
 }
 
-.header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  min-width: 100%;
-}
-/* .header {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    margin: 0;
-}
-
 div > img {
     display: block;
     position: absolute;
@@ -46,17 +31,22 @@ div > img {
     transform: translate(-50%, -50%);
 } */
 
-img {
-    max-width: 100%
-} */
-.about {
+.header-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; */
+  position: relative;
+}
+
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
 }
 
-.projects {
+.projects-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +54,7 @@ img {
   margin: 25px 2% 0 2%;
 }
 
-.contact {
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
