@@ -42,7 +42,6 @@
   justify-content: center;
   flex-grow: 1;
   min-height: 100vh;
-  margin-top: 10%;
 }
 
 .projects-container {
@@ -52,6 +51,15 @@
   flex-grow: 1;
   min-height: 100vh;
   margin: 25px 2% 0 2%;
+}
+
+.writings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 100vh;
+  margin-top: 25px;
 }
 
 .contact-container {

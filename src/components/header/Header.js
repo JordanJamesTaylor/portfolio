@@ -2,43 +2,43 @@ import React, { Fragment, useRef } from 'react';
 
 import './header.css';
 
-export default function Header({ about, projects, contact, scrollToSection }) {
+export default function Header({ about, projects, writing, contact, scrollToSection }) {
 
     return (
         <Fragment>
             <img className='orbital-paths' src={require('../../assests/header.png')} alt='cartoon solar system background' />
             
             <div className='sun'>
-                <img src={require('../../assests/green-blue-planet.png')} />
-                <h3 className='titles'>
-                    Jordan Taylor
-                </h3>
+                <img src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>
+                <h1 className='titles'>
+                    ABOUT
+                </h1>
             </div>
 
             <div className='contact-planet'>
                 <img src={require('../../assests/green-blue-planet.png')} onClick={() => scrollToSection(contact)}/>
-                <h3 className='titles'>
-                    Contact
-                </h3>
+                <h1 className='titles'>
+                    CONTACT
+                </h1>
             </div> 
 
-            <div className='about-planet'>
-                <img src={require('../../assests/green-pink-planet.png')} onClick={() => scrollToSection(about)}/>
-                <h3 className='titles'>
-                    About
-                </h3>
+            <div className='projects-planet'>
+                <img src={require('../../assests/green-pink-planet.png')} onClick={() => scrollToSection(projects)}/>
+                <h1 className='titles'>
+                    PROJECTS
+                </h1>
             </div>
             
-            <div className='projects-planet'>
-                <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(projects)}/>
-                <h3 className='titles'>
-                    Projects
-                </h3>
+            <div className='writings-planet'>
+                <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(writing)}/>
+                <h1 className='titles'>
+                    WRITING 
+                </h1>
             </div>
             <div className='intro'>
                 <h1 className='intro-name'>I'm Jordan</h1>
                 <p>
-                    Software Engineer, with experience in JavaScript, Typescript, Node.js, React, Next.js, and Ruby, pursuing a career as a full stack developer. 
+                    Software Engineer with experience in JavaScript, Typescript, Node.js, React, Next.js, and Ruby, pursuing a career as a full stack developer. 
                 </p>
                 <a href='https://github.com/JordanJamesTaylor' target='_blank'>
                     <img className='link-icons' src={require('../../assests/github-icon.png')} />

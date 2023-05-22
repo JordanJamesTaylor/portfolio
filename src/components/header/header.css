@@ -15,6 +15,10 @@
     color: white;
 }
 
+.intro-name {
+    font-family: 'Bruno Ace SC', 'cursive';
+}
+
 .link-icons {
     margin: 5px 10px 2px 5px;
 }
@@ -24,7 +28,7 @@
     margin-top: 0;
     padding-left: 60%;
     z-index: 100;
-    font-family: 'Porter Sans Block', sans-serif;
+    font-family: 'Bruno Ace SC', 'cursive';
     color: white;
     transform-origin: 0 0;
     transform: rotate(-30deg);
@@ -44,21 +48,27 @@
     transition: all .2s ease-in-out; 
 }
 
-.about-planet {
+.projects-planet {
     position: absolute;
     left: 25%;
     top: 6%;
     transition: all .2s ease-in-out; 
 }
 
-.projects-planet {
+.writings-planet {
     position: absolute;
-    left: 30%;
-    top: 42%;
+    left: 25%;
+    top: 48%;
     transition: all .2s ease-in-out; 
 }
 
-.sun:hover, .about-planet:hover, .projects-planet:hover, .contact-planet:hover, .link-icons:hover{
+.sun:hover  {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+.about-planet:hover, .projects-planet:hover, .writings-planet:hover, .contact-planet:hover, .link-icons:hover{
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);

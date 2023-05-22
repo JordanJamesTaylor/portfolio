@@ -6,50 +6,51 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 import "./projects.css";
+import spaceBackground from "../../assests/temp-space.jpg";
 
 export default function Projects() {
   return (
     <div className="cards-container">
       <Card className="cards">
+        <h1 className='project-titles'>
+          Blunder-Bug
+        </h1>
       <CardMedia
         sx={{ height: 140 }}
-        image="../../assests/github-iconl"
+        image={spaceBackground}
         title="Blunder-Bug screenshot"
       />
       <CardContent>
-        <h1>
-          Blunder-Bug
-        </h1>
         <Typography variant="body2" color="text.secondary">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Typography>
       </CardContent>
     </Card>
     <Card className="cards">
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="Space Invaders screenshot"
-      />
-      <CardContent>
-        <h1>
+        <h1 className='project-titles'>
           Space Invaders
         </h1>
+      <CardMedia
+        sx={{ height: 140 }}
+        image={spaceBackground}
+        title="Blunder-Bug screenshot"
+      />
+      <CardContent>
         <Typography variant="body2" color="text.secondary">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Typography>
       </CardContent>
     </Card>
     <Card className="cards">
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="GetItDone screenshot"
-      />
-      <CardContent>
-        <h1>
+        <h1 className='project-titles'>
           GetItDone
         </h1>
+      <CardMedia
+        sx={{ height: 140 }}
+        image={spaceBackground}
+        title="Blunder-Bug screenshot"
+      />
+      <CardContent>
         <Typography variant="body2" color="text.secondary">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Typography>
