@@ -55,11 +55,13 @@
 
 .writings-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  min-height: 100vh;
-  margin-top: 25px;
+  align-self: center;
+  /* min-height: 100vh;
+  margin-top: 25px; */
 }
 
 .contact-container {
@@ -69,4 +71,8 @@
   flex-grow: 1;
   min-height: 100vh;
   margin-top: 25px;
+}
+
+a {
+  text-decoration: none;
 }

@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
-import Writing from './components/writing/Writing';
+import Writings from './components/writings/Writings';
 
 import './App.css';
 
@@ -23,7 +23,7 @@ export default function App() {
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
-  const writing = useRef(null);
+  const writings = useRef(null);
   const contact = useRef(null);
 
   // grab window element and scroll to component
@@ -39,7 +39,7 @@ export default function App() {
   return (
       <div className='App'>
         <section className='header-container'>
-          <Header about={about} projects={projects} writing={writing} contact={contact} scrollToSection={scrollToSection}/>
+          <Header about={about} projects={projects} writings={writings} contact={contact} scrollToSection={scrollToSection}/>
         </section>
         <section ref={about} className='about-container'>
           <About />
@@ -47,8 +47,8 @@ export default function App() {
         <section ref={projects} className='projects-container'>
           <Projects />
         </section>
-        <section ref={writing} className='writings-container'>
-          <Writing />
+        <section ref={writings} className='writings-container'>
+          <Writings />
         </section>
         <section ref={contact} className='contact-container'>
           <Contact />

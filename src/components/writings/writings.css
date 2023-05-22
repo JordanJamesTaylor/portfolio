@@ -1,0 +1,29 @@
+.blog-section {
+    margin: 5% 0 5% 0;
+    color: whitesmoke;
+    font-family: 'Bruno Ace SC', 'cursive';
+}
+
+.blog-posts {
+    width: 80%;
+    list-style-type: none;
+    text-align: left;
+    text-align: center;
+    border-radius: 5px;
+}   
+
+.blog-post {
+    height: 40px;
+}
+
+.blog-titles {
+    color: black;
+    font-family: 'Bruno Ace SC', 'cursive';
+}
+
+.blog-post:hover {
+    cursor: pointer;
+    color: rbga(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transform: scale(1.1);
+}

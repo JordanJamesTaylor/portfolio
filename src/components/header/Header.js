@@ -2,7 +2,7 @@ import React, { Fragment, useRef } from 'react';
 
 import './header.css';
 
-export default function Header({ about, projects, writing, contact, scrollToSection }) {
+export default function Header({ about, projects, writings, contact, scrollToSection }) {
 
     return (
         <Fragment>
@@ -30,9 +30,9 @@ export default function Header({ about, projects, writing, contact, scrollToSect
             </div>
             
             <div className='writings-planet'>
-                <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(writing)}/>
+                <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(writings)}/>
                 <h1 className='titles'>
-                    WRITING 
+                    WRITINGS
                 </h1>
             </div>
             <div className='intro'>
