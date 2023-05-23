@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from 'react';
+import React, { Fragment } from 'react';
 
 import './header.css';
 
@@ -6,7 +6,7 @@ export default function Header({ about, projects, writings, contact, scrollToSec
 
     return (
         <Fragment>
-            <img className='orbital-paths' src={require('../../assests/header.png')} alt='cartoon solar system background' />
+            <img className='orbital-paths' src={require('../../assests/orbital-lines.png')} alt='cartoon solar system background' />
             
             <div className='sun'>
                 <img src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>

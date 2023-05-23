@@ -1,4 +1,5 @@
 .orbital-paths {
+    min-height: 100vh;
     width: 100%;
     max-height: 100vh;
 }
@@ -17,6 +18,7 @@
 
 .intro-name {
     font-family: 'Bruno Ace SC', 'cursive';
+    cursor: default;
 }
 
 .link-icons {
@@ -37,7 +39,7 @@
 .sun {
     position: absolute;
     left: 0%;
-    top: 2%;
+    top: 3%;
     transition: all .2s ease-in-out; 
 }
 
@@ -45,19 +47,20 @@
     position: absolute;
     left: 52%;
     top: 20%;
+    border-radius: 100px;
     transition: all .2s ease-in-out; 
 }
 
 .projects-planet {
     position: absolute;
-    left: 25%;
+    left: 24%;
     top: 6%;
     transition: all .2s ease-in-out; 
 }
 
 .writings-planet {
     position: absolute;
-    left: 25%;
+    left: 28%;
     top: 48%;
     transition: all .2s ease-in-out; 
 }
@@ -71,7 +74,7 @@
 .about-planet:hover, .projects-planet:hover, .writings-planet:hover, .contact-planet:hover, .link-icons:hover{
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    /* box-shadow: 0 5px 15px rgba(145, 92, 182, .4); */
     border-radius: 100px;
     transform: scale(1.1);
 }

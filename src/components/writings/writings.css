@@ -1,11 +1,21 @@
-.blog-section {
-    margin: 5% 0 5% 0;
-    color: whitesmoke;
-    font-family: 'Bruno Ace SC', 'cursive';
+.writings-section {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: center; */
+    gap: 3%;
+    padding: 2%;
+}
+
+.blog-img {
+    flex-grow: 2;
+    width: 50%;
+    height: auto;
 }
 
 .blog-posts {
-    width: 80%;
+    flex-grow: 2;
+    width: 50%;
+    height: 100%;
     list-style-type: none;
     text-align: left;
     text-align: center;

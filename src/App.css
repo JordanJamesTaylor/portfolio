@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.section-titles {
+  color: whitesmoke;
+  padding: 2%;
+  font-family: 'Bruno Ace SC', 'cursive';
+  cursor: default;
+}
+
 .navbar {
   height: 40px;
   position: sticky; 
@@ -45,10 +52,10 @@
 }
 
 .projects-container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 1; */
   min-height: 100vh;
   margin: 25px 2% 0 2%;
 }
