@@ -22,15 +22,6 @@ export default function App() {
         //     ].join(','),
         //   },
   // });
-        
-  // following cursor animations
-  // const cursor = new MouseFollower({
-  //   container: document.body,
-  //   skewing: 15,
-  //   skewingText: 0.5,
-  //   stickDelta: 10,
-  // });
-  // MouseFollower.registerGSAP(gsap);
 
   // init useRef hook for each section
   const about = useRef(null);
@@ -48,13 +39,22 @@ export default function App() {
     );
   };
   
+  // following cursor animations
+  const cursor = new MouseFollower({
+    container: document.body,
+    skewing: 15,
+    skewingText: 0.5,
+    stickDelta: 10,
+  });
+  MouseFollower.registerGSAP(gsap);
+
   return (
       <div className='App'>
         <section className='header-container'>
           <Header about={about} projects={projects} writings={writings} contact={contact} scrollToSection={scrollToSection}/>
         </section>
         <section ref={about} className='about-container'>
-          <About />
+          <About cursor={cursor}/>
         </section>
         <section ref={projects} className='projects-container'>
           <h1 className='section-titles'>Projects</h1>

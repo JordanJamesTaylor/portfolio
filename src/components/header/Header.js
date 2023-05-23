@@ -36,7 +36,7 @@ export default function Header({ about, projects, writings, contact, scrollToSec
                 </h1>
             </div>
             <div className='intro'>
-                <h1 className='intro-name'>I'm Jordan</h1>
+                <h1 className='intro-name' data-cursor-img={require("../../assests/resume-photo.png")}>I'm Jordan</h1>
                 <p>
                     Software Engineer with experience in JavaScript, Typescript, Node.js, React, Next.js, and Ruby, pursuing a career as a full stack developer. 
                 </p>

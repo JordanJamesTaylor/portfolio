@@ -6,15 +6,20 @@
     padding: 2%;
 }
 
+.blog-img-container {
+    flex-grow: 1;
+    min-width: 50%;
+}
+
 .blog-img {
-    flex-grow: 2;
-    width: 50%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
 }
 
 .blog-posts {
-    flex-grow: 2;
-    width: 50%;
+    flex-grow: 1;
+    max-width: 50%;
     height: 100%;
     list-style-type: none;
     text-align: left;

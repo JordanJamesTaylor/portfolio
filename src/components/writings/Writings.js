@@ -15,23 +15,22 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Writings() {
 
-  let [curBlogImg, setCurBlogImg] = useState(<img src={require('../../assests/green-pink-planet.png')} alt='blog-image' />);
+  let [curBlogImg, setCurBlogImg] = useState(<img className='blog-img' src={require('../../assests/lexical.png')} alt='blog-image' />);
 
   const changeBlogImg = (id) => {
     console.log(id);
     if(id === 'lexical'){
-        setCurBlogImg(<img src={require('../../assests/green-pink-planet.png')} alt='blog-image' />);
+        setCurBlogImg(<img className='blog-img' src={require('../../assests/lexical.png')} alt='blog-image' />);
     } else if(id === 'frontend') {
-        setCurBlogImg(<img src={require('../../assests/green-blue-planet.png')} alt='blog-image' />);  
+        setCurBlogImg(<img className='blog-img' src={require('../../assests/frontend.png')} alt='blog-image' />);  
     } else if(id === 'dynamic') {
-        setCurBlogImg(<img src={require('../../assests/red-blue-planet.png')} alt='blog-image' />);  
+        setCurBlogImg(<img className='blog-img' src={require('../../assests/dynamic.png')} alt='blog-image' />);  
     } else if(id === 'imperative'){
-      setCurBlogImg(<img src={require('../../assests/sun.png')} alt='blog-image' />);  
+      setCurBlogImg(<img className='blog-img' src={require('../../assests/imperative.png')} alt='blog-image' />);  
     }
   };
 
   return (
-    <Fragment>
     <div className="writings-section">
     <div className='blog-posts'>
       <Grid container spacing={2} columns={16}>
@@ -73,10 +72,9 @@ export default function Writings() {
         </Grid>
       </Grid>
     </div>
-    <div className='blog-img'>
+    <div className='blog-img-container'>
       {curBlogImg}
     </div>
     </div>
-    </Fragment>
   );
 };
