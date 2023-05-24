@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { createTheme } from '@mui/material';
+// import axios from 'axios';
 import MouseFollower from "mouse-follower";
 import Header from './components/header/Header';
 import About from './components/about/About';
@@ -11,6 +12,57 @@ import gsap from "gsap";
 import './App.css';
 
 export default function App() {
+
+  const axios = require('axios');
+
+  const [profile, setProfile] = useState({
+    name: 'Jordan Taylor',
+    profileImage: '',
+    profileUrl: ''
+  });
+
+  const [blog, setBlog] = useState({
+      item: [],
+      isLoading: true,
+      error: null
+  });
+
+  // useEffect(() => {
+  //   // axios supported by more browsers than fetch
+  //   axios.get('https%3A%2F%2Fmedium.com%2Ffeed%2F%40jordjamestaylor')
+  //   .then(info => {
+  //     const image = info.feed.image;
+  //     const link = info.feed.link;
+  //     const blogs = info.items;
+  //     const posts = blogs.filter(post => post.categories.length > 0)
+
+  //     setProfile(p => ({...p, profileUrl: link, profileImage: image}))
+  //     setBlog({item: posts, isLoading: false})
+  //   }).catch(
+  //     err => setBlog({error: err.message})
+  //   ), [axios]
+  // }, []);
+
+  // https%3A%2F%2Fmedium.com%2Ffeed%2F%40jordjamestaylor
+
+  useEffect(() => {
+    fetch('https://medium.com/feed/@jordjamestaylor')
+    .then(res => res.json())
+    .then(info => {
+            console.log('HELLO!')
+            console.log(info.feed);
+            const image = info.feed.image;
+            const link = info.feed.link;
+            const blogs = info.items;
+            const posts = blogs.filter(post => post.categories.length > 0)
+            // put response in state
+            setProfile(p => ({...p, profileUrl: link, profileImage: image}))
+            setBlog({item: posts, isLoading: false})
+    }).catch(err => {
+      console.log('ERROR HERE -->', err.message);
+      setBlog({ error: err.message })
+    })
+  }, []);
 
   const theme = createTheme({
     typography: {
@@ -62,7 +114,7 @@ export default function App() {
         </section>
         <section ref={contact} className='contact-container'>
           <h1 className='section-titles'>Contact Me</h1>
-          <Contact />
+          <Contact profile={profile} blog={blog} />
         </section>
       </div>
   );

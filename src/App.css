@@ -40,7 +40,8 @@
 
 .header-container {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 500px;
 }
 
 .about-container {
@@ -48,7 +49,8 @@
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 1300px;
 }
 
 .projects-container {
@@ -56,19 +58,20 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1; */
-  min-height: 100vh;
-  margin: 25px 2% 0 2%;
+
+  margin: 25px;
+  max-height: 500px;
 }
 
 .writings-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 1; */
   align-self: center;
-  /* min-height: 100vh;
-  margin-top: 25px; */
+  max-height: 500px;
+  margin-top: 200px;
 }
 
 .contact-container {
