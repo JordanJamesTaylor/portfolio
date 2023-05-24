@@ -7,28 +7,24 @@ export default function Header({ about, projects, writings, contact, scrollToSec
     return (
         <Fragment>
             <img className='orbital-paths' src={require('../../assests/orbital-lines.png')} alt='cartoon solar system background' />
-            
             <div className='sun'>
                 <img src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>
                 <h1 className='titles'>
                     ABOUT
                 </h1>
             </div>
-
             <div className='contact-planet'>
                 <img src={require('../../assests/green-blue-planet.png')} onClick={() => scrollToSection(contact)}/>
                 <h1 className='titles'>
                     CONTACT
                 </h1>
             </div> 
-
             <div className='projects-planet'>
                 <img src={require('../../assests/green-pink-planet.png')} onClick={() => scrollToSection(projects)}/>
                 <h1 className='titles'>
                     PROJECTS
                 </h1>
             </div>
-            
             <div className='writings-planet'>
                 <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(writings)}/>
                 <h1 className='titles'>

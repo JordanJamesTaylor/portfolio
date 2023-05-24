@@ -72,9 +72,9 @@ export default function Writings() {
         </Grid>
       </Grid>
     </div>
-    <div className='blog-img-container'>
-      {curBlogImg}
-    </div>
+      <div className='blog-img-container'>
+        {curBlogImg}
+      </div>
     </div>
   );
 };

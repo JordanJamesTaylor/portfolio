@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #080B3E;
+  font-family: 'Comfortaa';
 }
 
 /* Center application on ele with ID root, not the body el */
@@ -14,4 +15,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+p {
+  font-family: 'Comfortaa';
+  color: #95C6FF;
 }

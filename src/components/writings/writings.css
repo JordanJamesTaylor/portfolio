@@ -1,7 +1,5 @@
 .writings-section {
-    display: flex;
-    /* flex-direction: row;
-    justify-content: center; */
+    display: flex;  
     gap: 3%;
     padding: 2%;
 }
@@ -14,7 +12,7 @@
 .blog-img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
+    border-radius: 10px;        
 }
 
 .blog-posts {

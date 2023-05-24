@@ -9,7 +9,6 @@
     width: 200px;
     height: 350px;
     text-align: left;
-    z-index: 100;
     left: 75%;
     top: 50%;
     margin-right: 5%;
@@ -19,6 +18,7 @@
 .intro-name {
     font-family: 'Bruno Ace SC', 'cursive';
     cursor: default;
+    color: #95C6FF;
 }
 
 .link-icons {
@@ -65,43 +65,7 @@
     transition: all .2s ease-in-out; 
 }
 
-.sun:hover  {
+.sun:hover, .about-planet:hover, .projects-planet:hover, .writings-planet:hover, .contact-planet:hover, .link-icons:hover{
     cursor: pointer;
-    color: rgba(255, 255, 255, 1);
     transform: scale(1.1);
 }
-
-.about-planet:hover, .projects-planet:hover, .writings-planet:hover, .contact-planet:hover, .link-icons:hover{
-    cursor: pointer;
-    color: rgba(255, 255, 255, 1);
-    /* box-shadow: 0 5px 15px rgba(145, 92, 182, .4); */
-    border-radius: 100px;
-    transform: scale(1.1);
-}
-
-/* .contact-planet:hover {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    border-radius: 100px;
-    transform: scale(1.2);
-}
-
-
-.about-planet:hover {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    border-radius: 100px;
-    transform: scale(1.2);
-}
-
-
-.projects-planet:hover {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    border-radius: 120px;
-    transform: scale(1.2);
-} */
-
