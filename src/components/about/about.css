@@ -1,9 +1,25 @@
 .name {
     align-self: flex-start;
-    padding-left: 18%;
+    margin-left: 18%;
     font-family: 'Bruno Ace SC', 'cursive';
     color: #95C6FF;
     cursor: default;    
+}
+
+.bio-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.type-writer {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 1%;
+    font-family: 'Bruno Ace SC', 'cursive';
+    font-size: 25px;
+    font-weight: bold;
+    color: #95C6FF;
 }
 
 .bio {
