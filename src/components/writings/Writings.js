@@ -15,18 +15,17 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Writings() {
 
-  let [curBlogImg, setCurBlogImg] = useState(<img className='blog-img' src={require('../../assests/lexical.png')} alt='blog-image' />);
+  let [curBlogImg, setCurBlogImg] = useState(<img className='blog-img' src={require('../../assests/temp-space.jpg')} alt='blog-image' />);
 
   const changeBlogImg = (id) => {
-    console.log(id);
     if(id === 'lexical'){
-        setCurBlogImg(<img className='blog-img' src={require('../../assests/lexical.png')} alt='blog-image' />);
+        setCurBlogImg(<img className='blog-img' src={require('../../assests/temp-space.jpg')} alt='blog-image' />);
     } else if(id === 'frontend') {
-        setCurBlogImg(<img className='blog-img' src={require('../../assests/frontend.png')} alt='blog-image' />);  
+        setCurBlogImg(<img className='blog-img' src={require('../../assests/temp-space.jpg')} alt='blog-image' />);  
     } else if(id === 'dynamic') {
-        setCurBlogImg(<img className='blog-img' src={require('../../assests/dynamic.png')} alt='blog-image' />);  
+        setCurBlogImg(<img className='blog-img' src={require('../../assests/temp-space.jpg')} alt='blog-image' />);  
     } else if(id === 'imperative'){
-      setCurBlogImg(<img className='blog-img' src={require('../../assests/imperative.png')} alt='blog-image' />);  
+      setCurBlogImg(<img className='blog-img' src={require('../../assests/temp-space.jpg')} alt='blog-image' />);  
     }
   };
 
