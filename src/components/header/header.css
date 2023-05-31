@@ -2,7 +2,6 @@
     min-height: 100%;
     max-height: 1264px;;
     width: 100%;
-    max-height: 100vh;
 }
 
 .intro {
@@ -59,14 +58,14 @@
     transition: all .2s ease-in-out; 
 }
 
-.writings-planet {
+.blogs-planet {
     position: absolute;
     left: 35%;
     top: 48%;
     transition: all .2s ease-in-out; 
 }
 
-.sun:hover, .about-planet:hover, .projects-planet:hover, .writings-planet:hover, .contact-planet:hover, .link-icons:hover{
+.sun:hover, .about-planet:hover, .projects-planet:hover, .blogs-planet:hover, .contact-planet:hover, .link-icons:hover{
     cursor: pointer;
     transform: scale(1.1);
 }

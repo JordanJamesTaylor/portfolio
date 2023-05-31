@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import './header.css';
 
-export default function Header({ about, projects, writings, contact, scrollToSection }) {
+export default function Header({ about, projects, blogs, contact, scrollToSection }) {
 
     return (
         <Fragment>
@@ -25,10 +25,10 @@ export default function Header({ about, projects, writings, contact, scrollToSec
                     PROJECTS
                 </h1>
             </div>
-            <div className='writings-planet'>
-                <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(writings)}/>
+            <div className='blogs-planet'>
+                <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(blogs)}/>
                 <h1 className='titles'>
-                    WRITINGS
+                    BLOGS
                 </h1>
             </div>
             <div className='intro'>

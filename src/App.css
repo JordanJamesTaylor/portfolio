@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  border: solid black 5px;
+  background-color: #080A3E;
+
+  
 }
 
 .section-titles {
@@ -9,24 +13,21 @@
   cursor: default;
 }
 
-.navbar {
+/* .navbar {
   height: 40px;
   position: sticky; 
   top: 0;
   padding-top: 10px;
-  color: black;
-  background-color: aliceblue;
-  border: solid 2px;
-}
+} */
 
-.links {
+/* .links {
   text-decoration: none;
   display: inline;
   padding: 20px;
   font-weight: 700;
   font-size: large;
   cursor: pointer;
-}
+} */
 
 /* div > img {
     display: block;
@@ -48,38 +49,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   height: 100vh;
   max-height: 1300px;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .projects-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1; */
-
-  margin: 25px;
-  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  max-height: 1300x;
+  padding: 0 2% 5% 2%;
 }
 
-.writings-container {
-  /* display: flex;
+/* .writings-container {
+  /display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1; */
+  flex-grow: 1;
   align-self: center;
   max-height: 500px;
   margin-top: 200px;
+  background-color: #080A3E;
+} */
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-grow: 1; */
+  height: 100vh;
+  max-height: 1300px;
+  margin-top: 50%;
+  padding: 20% 5% 0 5%;
 }
 
 .contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   min-height: 100vh;
   margin-top: 25px;
 }

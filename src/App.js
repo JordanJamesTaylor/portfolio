@@ -5,9 +5,10 @@ import MouseFollower from "mouse-follower";
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
-import Writings from './components/writings/Writings';
-import Blog from './components/blog/Blog';
+import BlogsCarousel from './components/blogs/BlogsCarousel';
 import Contact from './components/contact/Contact';
+// import Writings from './components/writings/Writings';
+
 import gsap from "gsap";
 
 import './App.css';
@@ -46,7 +47,7 @@ export default function App() {
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
-  const writings = useRef(null);
+  const blogs = useRef(null);
   const contact = useRef(null);
 
   // material ui customisation
@@ -79,7 +80,7 @@ export default function App() {
   return (
       <div className='App'>
         <section className='header-container'>
-          <Header about={about} projects={projects} writings={writings} contact={contact} scrollToSection={scrollToSection}/>
+          <Header about={about} projects={projects} blogs={blogs} contact={contact} scrollToSection={scrollToSection}/>
         </section>
         <section ref={about} className='about-container'>
           <About />
@@ -88,13 +89,13 @@ export default function App() {
           <h1 className='section-titles'>Projects</h1>
           <Projects />
         </section>
-        <section ref={writings} className='writings-container'>
+        {/* <section ref={writings} className='writings-container'>
         < h1 className='section-titles'>WRITINGS</h1>
           <Writings />
-        </section>
-        <section ref={contact} className='contact-container'>
+        </section> */}
+        <section ref={blogs} className='blogs-container'>
           <h1 className='section-titles'>My Blog</h1>
-          <Blog profile={profile} blog={blog} />
+          <BlogsCarousel profile={profile} blog={blog} />
         </section>
         <section ref={contact} className='contact-container'>
           <h1 className='section-titles'>Contact</h1>

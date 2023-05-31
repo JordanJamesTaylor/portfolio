@@ -7,18 +7,16 @@ export default function About() {
 return (
   <Fragment>
     <div className='bio-title'>
-      <h1 className='name' data-cursor-text='Hello there!'>Hi, I'm Jordan Taylor</h1>
+      <h1 className='name' data-cursor-text='Hello there!'>Hi, I'm Jordan Taylor:</h1>
       <div className='type-writer'>
-      <div className="type-writer">
-      <Typewriter
-          options={{
-            strings: ['Software Developer', 'Full-Stack Developer', 'Your Next Developer'],
-            autoStart: true,
-            
-            loop: true,
-          }}
-      />
-    </div>
+        <Typewriter
+            options={{
+              strings: ['Software Developer', 'Full-Stack Developer', 'Your Next Developer'],
+              autoStart: true,
+              
+              loop: true,
+            }}
+        />
       </div>
     </div>
     <div className='bio'>

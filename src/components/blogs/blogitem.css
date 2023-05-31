@@ -1,0 +1,12 @@
+.carousel-item{
+    font-family: 'Bruno Ace SC', 'cursive';
+    padding: 5% 2% 5% 2%;
+
+    border: solid white 2px;
+}
+
+.carousel-img {
+    width: 250px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px; 
+}
