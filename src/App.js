@@ -15,33 +15,38 @@ import './App.css';
 
 export default function App() {
 
-    // my medium profile
-    const [profile, setProfile] = useState({
-      name: 'Jordan Taylor',
-      profileImage: '',
-      profileUrl: ''
-    });
-    // my medium posts
-    const [blogs, setBlogs] = useState({
-        posts: [],
-        isLoading: true,
-        error: null
-    });
-  // get my medium profile and posts
-  // axios is supported by more browser than fetch
-  useEffect(() => {
-    axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jordjamestaylor')
-    .then((res) => {
-      console.log('API RESPONSE: ', res.data);
-      const image = res.data.feed.image;
-      const link = res.data.feed.link;
-      const blogs = res.data.items;
+  // my medium profile
+  const [profile, setProfile] = useState({
+    name: 'Jordan Taylor',
+    profileImage: '',
+    profileUrl: ''
+  });
+  // my medium posts
+  const [blogs, setBlogs] = useState({
+      posts: [],
+      isLoading: true,
+      error: null
+  });
+
+  const getBlogPosts = async () => {
+    try{
+      const res = axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jordjamestaylor')
+      const blogPosts = await res;
+
+      const image = blogPosts.data.feed.image;
+      const link = blogPosts.data.feed.link;
+      const blogs = blogPosts.data.items;
             
       setProfile((p) => ({...p, profileUrl: link, profileImage: image}));
       setBlogs({posts: blogs, isLoading: false});
-    }).catch((err) => {
-      console.log({ error: err.message });
-    });
+      
+    }catch(err){
+      console.log({ error: err.message })
+    }
+  };
+
+  useEffect(() => {
+    getBlogPosts();
   }, []);
 
   // init useRef hook for each section
