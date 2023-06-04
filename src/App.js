@@ -22,8 +22,8 @@ export default function App() {
       profileUrl: ''
     });
     // my medium posts
-    const [blog, setBlog] = useState({
-        item: [],
+    const [blogs, setBlogs] = useState({
+        posts: [],
         isLoading: true,
         error: null
     });
@@ -38,7 +38,7 @@ export default function App() {
       const blogs = res.data.items;
             
       setProfile((p) => ({...p, profileUrl: link, profileImage: image}));
-      setBlog({item: blogs, isLoading: false});
+      setBlogs({posts: blogs, isLoading: false});
     }).catch((err) => {
       console.log({ error: err.message });
     });
@@ -47,7 +47,7 @@ export default function App() {
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
-  const blogs = useRef(null);
+  const blogPosts = useRef(null);
   const contact = useRef(null);
 
   // material ui customisation
@@ -93,13 +93,13 @@ export default function App() {
         < h1 className='section-titles'>WRITINGS</h1>
           <Writings />
         </section> */}
-        <section ref={blogs} className='blogs-container'>
+        <section ref={blogPosts} className='blogs-container'>
           <h1 className='section-titles'>My Blog</h1>
-          <BlogsCarousel profile={profile} blog={blog} />
+          <BlogsCarousel profile={profile} blogs={blogs} />
         </section>
         <section ref={contact} className='contact-container'>
           <h1 className='section-titles'>Contact</h1>
-          <Contact profile={profile} blog={blog} />
+          <Contact />
         </section>
       </div>
   );
