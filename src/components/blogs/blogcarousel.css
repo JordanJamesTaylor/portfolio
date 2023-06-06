@@ -1,0 +1,38 @@
+.carousel-btns-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arrow-btns {
+    background: none;
+    border: none;
+    color: #000F83;
+}
+
+.indicators {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.indicator-btns {
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin: 5px;
+    color: #000F83;
+}
+
+.indicator-btns-active {
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin: 5px;
+    color: #fff;
+}
+
+.arrow-btns:hover, .indicator-btns:hover{
+    cursor: pointer;
+    color: #fff;
+}
+

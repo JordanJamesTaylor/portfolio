@@ -1,9 +1,7 @@
 .App {
   text-align: center;
   border: solid black 5px;
-  background-color: #080A3E;
-
-  
+  background-color: #080A3E;  
 }
 
 .section-titles {
@@ -11,33 +9,8 @@
   padding: 2%;
   font-family: 'Bruno Ace SC', 'cursive';
   cursor: default;
+  margin:0;
 }
-
-/* .navbar {
-  height: 40px;
-  position: sticky; 
-  top: 0;
-  padding-top: 10px;
-} */
-
-/* .links {
-  text-decoration: none;
-  display: inline;
-  padding: 20px;
-  font-weight: 700;
-  font-size: large;
-  cursor: pointer;
-} */
-
-/* div > img {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-height: 80%;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
-} */
 
 .header-container {
   position: relative;
@@ -46,44 +19,25 @@
 }
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex-grow: 1; */
   height: 100vh;
   max-height: 1300px;
-  margin-top: 20%;
+  margin-top: 20rem;
 }
 
 .projects-container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  /* flex-grow: 1; */
   max-height: 1300x;
   padding: 0 2% 5% 2%;
+  margin-top: 5rem;
 }
 
-/* .writings-container {
-  /display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  align-self: center;
-  max-height: 500px;
-  margin-top: 200px;
-  background-color: #080A3E;
-} */
-
 .blogs-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex-grow: 1; */
-  height: 100vh;
-  max-height: 1300px;
-  margin-top: 50%;
-  padding: 20% 5% 0 5%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* height: 30rem; */
+  margin-top: 5rem;
 }
 
 .contact-container {

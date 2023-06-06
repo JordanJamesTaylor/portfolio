@@ -1,0 +1,15 @@
+/* .blog-item {
+    height: 50%;
+    margin: 0 5% 0 5%;
+    border: black solid 2px;
+} */
+
+.blog-card {
+    z-index: 100;
+}
+
+.card-img {
+    float: right; 
+    height: 15rem;
+    width: 17rem;
+}
