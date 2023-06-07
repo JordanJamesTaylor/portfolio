@@ -25,7 +25,7 @@
 }
 
 .projects-container {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   max-height: 1300x;
   padding: 0 2% 5% 2%;
@@ -33,10 +33,10 @@
 }
 
 .blogs-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-  /* height: 30rem; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
   margin-top: 5rem;
 }
 
