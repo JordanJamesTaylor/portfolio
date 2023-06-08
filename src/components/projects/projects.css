@@ -1,6 +1,77 @@
-.cards-container {
+.project-cards-container {
     display: flex;
+    align-items: center;
     flex-flow: row nowrap;
-    flex: 1;
-    width: 100;
+    justify-content: space-evenly;
+    margin-top: 2rem;
 }
+
+.project-card-a, .project-card-b, .project-card-c  {
+    margin: 0 1rem 0 1rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    /* position: relative; */
+    text-align: left;
+    height: 39rem;
+    width: 23rem;
+    border: solid white 1px;
+    border-radius: 25px;
+    background-color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.project-card-img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.project-card-a:hover, .project-card-b:hover, .project-card-c:hover {
+    /* transform: scale(1.1); */
+    color: #fff;
+    background: none;
+}
+
+.project-card-title {
+    margin-left: 1rem;
+    max-width: 30rem;
+    font-weight: 'bold';
+    font-family: 'Bruno Ace SC'; 
+    color: #012754;
+}
+
+.project-card-a:hover .project-card-title, .project-card-b:hover .project-card-title, .project-card-c:hover .project-card-title {
+    color: #b4d6ff;
+}
+
+.project-card-text {
+    color: #000;
+    margin: 0rem 1rem 1rem 1rem;
+    line-height: 1.4rem;
+}
+
+.project-card-a:hover .project-card-text, .project-card-b:hover .project-card-text, .project-card-c:hover .project-card-text {
+    color: #b4d6ff;
+}
+
+.project-link-btn {
+    display: inline-block;
+    width: 21rem;
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0 0 5rem 1rem;
+    border-radius: 15px;
+    color: #fff;
+    font-size: large;
+    font-weight: 900;
+    font-family: 'Comfortaa';
+    text-align: start;
+    background-image: linear-gradient(to right, #0D1980, #0B0F47);
+}
+
+.project-link-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
+}
+
+.project-ship-emoji {
+    margin: 0 7rem 0 1rem;
+}
+

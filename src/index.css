@@ -11,10 +11,9 @@ body {
   
 }
 
-::-webkit-scrollbar {
+:-webkit-scrollbar {
   display: none;
 }
-
 
 /* Center application on el with ID root, not the body el */
 #root {
