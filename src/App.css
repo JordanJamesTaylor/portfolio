@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  border: solid black 5px;
-  background-color: #080A3E;  
+  /* background-color: #080A3E;   */
+  background-image: linear-gradient(#080A3E, #080A3E, #1d1f66);
 }
 
 .section-titles {
@@ -12,6 +12,11 @@
   margin:0;
 }
 
+.about-container, .projects-container, .blogs-container, .resume-container, .contact-container {
+  margin-top: 10rem;
+  max-height: 1300px;
+}
+
 .header-container {
   position: relative;
   height: 100vh;
@@ -19,17 +24,14 @@
 }
 
 .about-container {
-  height: 100vh;
-  max-height: 1300px;
-  margin-top: 20rem;
+  /* height: 100vh; */
+  margin-top: 25rem;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
-  max-height: 1300x;
-  padding: 0 2% 5% 2%;
-  margin-top: 5rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .blogs-container {
@@ -37,16 +39,10 @@
   align-items: center;
   flex-direction: column;
   height: 30rem;
-  margin-top: 5rem;
 }
 
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-grow: 1; */
-  min-height: 100vh;
-  margin-top: 25px;
+.resume-container {
+  margin-bottom: 100rem;
 }
 
 a {

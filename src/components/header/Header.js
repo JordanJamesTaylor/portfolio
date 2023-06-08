@@ -9,25 +9,25 @@ export default function Header({ about, projects, blogs, contact, scrollToSectio
             <img className='orbital-paths' src={require('../../assests/orbital-lines.png')} alt='cartoon solar system background' />
             <div className='sun'>
                 <img src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>
-                <h1 className='titles'>
+                <h1 id='about-title'>
                     ABOUT
                 </h1>
             </div>
             <div className='contact-planet'>
                 <img src={require('../../assests/green-blue-planet.png')} onClick={() => scrollToSection(contact)}/>
-                <h1 className='titles'>
+                <h1 id='contact-title'>
                     CONTACT
                 </h1>
             </div> 
             <div className='projects-planet'>
                 <img src={require('../../assests/green-pink-planet.png')} onClick={() => scrollToSection(projects)}/>
-                <h1 className='titles'>
+                <h1 id='projects-title'>
                     PROJECTS
                 </h1>
             </div>
             <div className='blogs-planet'>
                 <img src={require('../../assests/red-blue-planet.png')} onClick={() => scrollToSection(blogs)}/>
-                <h1 className='titles'>
+                <h1 id='blogs-title'>
                     BLOGS
                 </h1>
             </div>

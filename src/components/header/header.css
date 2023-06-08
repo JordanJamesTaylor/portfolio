@@ -1,5 +1,4 @@
 .orbital-paths {
-    min-height: 100%;
     max-height: 1264px;;
     width: 100%;
 }
@@ -9,10 +8,9 @@
     width: 200px;
     height: 350px;
     text-align: left;
-    left: 75%;
-    top: 50%;
-    margin-right: 5%;
-    color: white;
+    left: 60rem;
+    top: 20rem;
+    /* margin-right: 5%; */
 }
 
 .intro-name {
@@ -22,13 +20,24 @@
 }
 
 .link-icons {
-    margin: 5px 10px 2px 5px;
+    /* margin: 5px 10px 2px 5px; */
+    margin-right: 1rem;
 }
 
-.titles {
+/* .titles {
     position: absolute;
     margin-top: 0;
-    padding-left: 60%;
+    padding-left: 6.5rem;
+    z-index: 100;
+    font-family: 'Bruno Ace SC', 'cursive';
+    color: white;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
+} */
+
+#about-title, #projects-title, #blogs-title, #contact-title{
+    position: absolute;
+    margin-top: 0;
     z-index: 100;
     font-family: 'Bruno Ace SC', 'cursive';
     color: white;
@@ -36,36 +45,50 @@
     transform: rotate(-30deg);
 }
 
-.sun {
-    position: absolute;
-    left: 0%;
-    top: 9%;
-    transition: all .2s ease-in-out; 
+#about-title {
+    padding-left: 6rem;
 }
 
-.contact-planet {
-    position: absolute;
-    left: 52%;
-    top: 20%;
-    border-radius: 100px;
-    transition: all .2s ease-in-out; 
+#projects-title {
+    margin-top: -1rem;
+    padding-left: 4.5rem;
 }
 
-.projects-planet {
-    position: absolute;
-    left: 25%;
-    top: 6%;
-    transition: all .2s ease-in-out; 
+#blogs-title {
+    padding-left: 9rem;
 }
 
-.blogs-planet {
+#contact-title {
+    padding-left: 6rem;
+}
+
+.sun, .contact-planet, .projects-planet, .blogs-planet {
     position: absolute;
-    left: 35%;
-    top: 48%;
-    transition: all .2s ease-in-out; 
 }
 
 .sun:hover, .about-planet:hover, .projects-planet:hover, .blogs-planet:hover, .contact-planet:hover, .link-icons:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+/* easier to keep planet on orbital line with % values */
+.sun {
+    left: 0.5rem;
+    top: 4rem;
+}
+
+.contact-planet {
+    left: 52%;
+    top: 22%;
+    border-radius: 100px;
+}
+
+.projects-planet {
+    left: 24%;
+    top: 40%;
+}
+
+.blogs-planet {
+    left: 27%;
+    top: 90%;
 }

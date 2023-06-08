@@ -7,7 +7,8 @@ import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import BlogsCarousel from './components/blogs/BlogsCarousel';
 import Contact from './components/contact/Contact';
-// import Writings from './components/writings/Writings';
+
+import Resume from './components/resume/Resume';
 
 import gsap from "gsap";
 
@@ -99,13 +100,17 @@ export default function App() {
           <Writings />
         </section> */}
         <section ref={blogPosts} className='blogs-container'>
-          <h1 className='section-titles'>My Blog</h1>
+          <h1 className='section-titles'>Writings</h1>
           <BlogsCarousel profile={profile} blogs={blogs} />
         </section>
-        <section ref={contact} className='contact-container'>
+        <section className='resume-container'>
+          <h1 className='section-titles'>Resume</h1>
+          <Resume />
+        </section>
+        {/* <section ref={contact} className='contact-container'>
           <h1 className='section-titles'>Contact</h1>
           <Contact />
-        </section>
+        </section> */}
       </div>
   );
 };
