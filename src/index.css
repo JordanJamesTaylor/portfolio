@@ -1,32 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+/* :-webkit-scrollbar {
+  display: none;
+} */
+/* 
+* {
+  margin: 0;
+  padding: 0;
+} */
+/* 
+html {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  /* flex-grow: 1; */
-  min-height: 100vh;
-  max-width: 1264px;
-  margin: auto;
+  margin:0;
   padding: 0;
   background-color: #16196F;
+} 
+*/
 
-  
+* {
+  margin: 0;
+  padding: 0;
 }
 
-:-webkit-scrollbar {
-  display: none;
+html{
+  font-size: 16px;
+  background-color: aqua;
+  border: solid 5px black;
 }
 
-/* Center application on el with ID root, not the body el */
+.body {
+  display: flex;
+}
+
 #root {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  align-self: center;
-
-  /* flex-grow: 1; */
 }
 
 p {
   text-align: left;
   font-family: 'Comfortaa';
   color: #95C6FF;
+} 
+
+a {
+  text-decoration: none;
 }

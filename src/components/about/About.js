@@ -7,7 +7,9 @@ export default function About() {
 return (
   <Fragment>
     <div className='bio-title'>
-      <h1 className='name' data-cursor-text='Hello there!'>Hi, I'm Jordan Taylor:</h1>
+      <div className='name'>
+        <h1 data-cursor-text='Hello there!'>Hi, I'm Jordan Taylor:</h1>
+      </div>
       <div className='type-writer'>
         <Typewriter
             options={{
@@ -20,15 +22,19 @@ return (
       </div>
     </div>
     <div className='bio'>
+    <br />
     <p>
      Lorem ipsum dolor sit amet consectetur. Leo pulvinar morbi molestie ut nunc eu. Massa elit amet a orci imperdiet. In tincidunt urna lectus quis faucibus varius ac commodo. Integer ut tellus donec ipsum ac ornare tellus.
     </p>
+    <br />
     <p>
       Lorem ipsum dolor sit amet consectetur. Leo pulvinar morbi molestie ut nunc eu. Massa elit amet a orci imperdiet. In tincidunt urna lectus quis faucibus varius ac commodo. Integer ut tellus donec ipsum ac ornare tellus.
     </p>
+    <br />
     <p>
       Lorem ipsum dolor sit amet consectetur. Leo pulvinar morbi molestie ut nunc eu. Massa elit amet a orci imperdiet. In tincidunt urna lectus quis faucibus varius ac commodo. Integer ut tellus donec ipsum ac ornare tellus.
     </p>
+    <br />
     <p>
       Lorem ipsum dolor sit amet consectetur. Leo pulvinar morbi molestie ut nunc eu. Massa elit amet a orci imperdiet. In tincidunt urna lectus quis faucibus varius ac commodo. Integer ut tellus donec ipsum ac ornare tellus.
     </p>

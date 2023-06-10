@@ -6,10 +6,8 @@ import Header from './components/header/Header';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import BlogsCarousel from './components/blogs/BlogsCarousel';
-import Contact from './components/contact/Contact';
-
 import Resume from './components/resume/Resume';
-
+import Contact from './components/contact/Contact';
 import gsap from "gsap";
 
 import './App.css';
@@ -53,8 +51,8 @@ export default function App() {
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
-  const blogPosts = useRef(null);
-  const contact = useRef(null);
+  const writings = useRef(null);
+  const resume = useRef(null);
 
   // material ui customisation
   const theme = createTheme({
@@ -67,6 +65,9 @@ export default function App() {
 
   // grab window element and scroll to component
   const scrollToSection = (elementRef) => {
+
+    console.log('ELEMENT: ', elementRef);
+    
     window.scrollTo({
         // scroll to top of selected section
         top: elementRef.current.offsetTop,
@@ -85,32 +86,35 @@ export default function App() {
 
   return (
       <div className='App'>
+
         <section className='header-container'>
-          <Header about={about} projects={projects} blogs={blogs} contact={contact} scrollToSection={scrollToSection}/>
+          <Header about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
         </section>
+
         <section ref={about} className='about-container'>
           <About />
         </section>
+
         <section ref={projects} className='projects-container'>
           <h1 className='section-titles'>Projects</h1>
           <Projects />
         </section>
-        {/* <section ref={writings} className='writings-container'>
-        < h1 className='section-titles'>WRITINGS</h1>
-          <Writings />
-        </section> */}
-        <section ref={blogPosts} className='blogs-container'>
+
+        <section ref={writings} className='blogs-container'>
           <h1 className='section-titles'>Writings</h1>
           <BlogsCarousel profile={profile} blogs={blogs} />
         </section>
-        <section className='resume-container'>
+
+        <section ref={resume} className='resume-container'>
           <h1 className='section-titles'>Resume</h1>
           <Resume />
         </section>
-        {/* <section ref={contact} className='contact-container'>
+
+        <section className='contact-container'>
           <h1 className='section-titles'>Contact</h1>
           <Contact />
-        </section> */}
+        </section>
+        
       </div>
   );
 };

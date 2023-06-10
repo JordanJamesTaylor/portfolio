@@ -1,4 +1,4 @@
-.card {
+.blog-card {
     position: relative;
     text-align: start;
     height: 25rem;
@@ -10,38 +10,37 @@
     transition: all .2s ease-in-out;
 }
 
-.card-img {
+.blog-card-img {
     float: right;
     height: 10rem;
     width: 20rem;
     border-radius: 25px;
     opacity: 0.3;
+    z-index: 0;
 }
 
-.card-title {
+.blog-card-title {
     position: absolute;
-    margin: 2rem 2rem 0 2rem;
+    margin: -8rem 2rem 0 2rem;
     max-width: 30rem;
-    font-weight: 'bold';
     font-family: 'Bruno Ace SC'; 
     color: #012754;
     z-index: 1;
 }
 
-.card-text {
+.blog-card-text {
     position: absolute;
-    padding-top: 10rem;
     color: #000;
     z-index: 1;
     margin: 0 2rem 0 2rem;
     line-height: 1.4rem;
 }
 
-.link-btn {
-    position: absolute;
+.blog-link-btn {
+    display: inline-block;
     height: 3rem;
-    width: 38rem;
-    margin: 20rem 0 0 2rem;
+    width: 40rem;
+    margin: 10rem 0 0 2rem;
     line-height: 3rem;
     border-radius: 15px;
     color: #fff;
@@ -52,10 +51,10 @@
     background-image: linear-gradient(to right, #0D1980, #0B0F47);
 }
 
-.ship-emoji {
+.blog-ship-emoji {
     margin: 0 23.5rem 0 1rem;
 }
 
-.link-btn:hover {
+.blog-link-btn:hover {
     transform: scale(1.03);
 }

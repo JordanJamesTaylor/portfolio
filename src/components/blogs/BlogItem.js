@@ -18,15 +18,15 @@ export default function BlogItem({ post }) {
     }
 
     return (
-        <div className='card' >
-            <img className='card-img' src={`${post.thumbnail}`} alt='blog title image' />
-            <h2 className='card-title'>
+        <div className='blog-card' >
+            <img className='blog-card-img' src={`${post.thumbnail}`} alt='blog title image' />
+            <h2 className='blog-card-title'>
                 {post.title}
             </h2>
-            <p className='card-text'>
+            <p className='blog-card-text'>
                 {`${toText(post.description.substr(0, 500))}...`}
             </p>
-            <a  href={`${post.link}`} target='_blank' className='link-btn'><span className='ship-emoji'>&#128640;</span>Read on Medium
+            <a  href={`${post.link}`} target='_blank' className='blog-link-btn'><span className='blog-ship-emoji'>&#128640;</span>Read on Medium
             </a>
         </div>
     );

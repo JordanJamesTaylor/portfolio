@@ -1,16 +1,62 @@
-.orbital-paths {
-    max-height: 1264px;;
-    width: 100%;
+/* .
+
+.sun, .resume-planet, .projects-planet, .writings-planet {
+    position: absolute;
+}
+
+.sun:hover, .about-planet:hover, .projects-planet:hover, .blogs-planet:hover, .resume-planet:hover, .link-icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+*/
+
+
+.projects-planet {
+    position: relative;
+    top: -60rem;
+    right: -18rem;
+}
+
+.writings-planet {
+    position: relative;
+    top: -59rem;
+    right: -25rem;
+}
+.resume-planet {
+    position: relative;
+    top: -53rem;
+    right: -42.5rem;
+}
+
+
+.sun {
+    position: relative;
+    top: -50rem;
+}
+
+.projects-planet {
+    position: relative;
+    top: -60rem;
+    right: -18rem;
+}
+
+
+#about-title, #projects-title, #writings-title, #resume-title{
+    position: relative;
+    font-family: 'Bruno Ace SC', 'cursive';
+    color: white;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
+    padding-left: 6rem;
 }
 
 .intro {
-    position: absolute;
+    position: relative;
+    top: -60rem;
+    right: -18rem;
     width: 200px;
     height: 350px;
-    text-align: left;
-    left: 60rem;
-    top: 20rem;
-    /* margin-right: 5%; */
 }
 
 .intro-name {
@@ -20,75 +66,5 @@
 }
 
 .link-icons {
-    /* margin: 5px 10px 2px 5px; */
-    margin-right: 1rem;
-}
-
-/* .titles {
-    position: absolute;
-    margin-top: 0;
-    padding-left: 6.5rem;
-    z-index: 100;
-    font-family: 'Bruno Ace SC', 'cursive';
-    color: white;
-    transform-origin: 0 0;
-    transform: rotate(-30deg);
-} */
-
-#about-title, #projects-title, #blogs-title, #contact-title{
-    position: absolute;
-    margin-top: 0;
-    z-index: 100;
-    font-family: 'Bruno Ace SC', 'cursive';
-    color: white;
-    transform-origin: 0 0;
-    transform: rotate(-30deg);
-}
-
-#about-title {
-    padding-left: 6rem;
-}
-
-#projects-title {
-    margin-top: -1rem;
-    padding-left: 4.5rem;
-}
-
-#blogs-title {
-    padding-left: 9rem;
-}
-
-#contact-title {
-    padding-left: 6rem;
-}
-
-.sun, .contact-planet, .projects-planet, .blogs-planet {
-    position: absolute;
-}
-
-.sun:hover, .about-planet:hover, .projects-planet:hover, .blogs-planet:hover, .contact-planet:hover, .link-icons:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-}
-/* easier to keep planet on orbital line with % values */
-.sun {
-    left: 0.5rem;
-    top: 4rem;
-}
-
-.contact-planet {
-    left: 52%;
-    top: 22%;
-    border-radius: 100px;
-}
-
-.projects-planet {
-    left: 24%;
-    top: 40%;
-}
-
-.blogs-planet {
-    left: 27%;
-    top: 90%;
+    margin: 0.5rem 1rem 0 0;
 }

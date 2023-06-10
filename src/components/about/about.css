@@ -1,21 +1,14 @@
-.name {
-    align-self: flex-start;
-    margin-left: 18%;
-    font-family: 'Bruno Ace SC', 'cursive';
-    color: #95C6FF;
-    cursor: default;    
+.bio-title {
+    min-width: 35rem;
 }
 
-.bio-title {
-    display: flex;
-    flex-direction: row;
+.name {
+    font-family: 'Bruno Ace SC', 'cursive';
+    color: #95C6FF;
 }
 
 .type-writer {
-    display: flex;
-    /* flex-grow: 1; */
-    align-items: center;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     font-family: 'Bruno Ace SC', 'cursive';
     font-size: 25px;
     font-weight: bold;
@@ -23,8 +16,5 @@
 }
 
 .bio {
-    max-width: auto;
-    align-self: center;
-    padding: 0 33% 0 33%;
-    /* text-align: left; */
+    max-width: 35rem;
 }

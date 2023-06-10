@@ -90,7 +90,7 @@
 //   );
 // }
 
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import spaceBackground from "../../assests/temp-space.jpg";
 import "./projects.css";

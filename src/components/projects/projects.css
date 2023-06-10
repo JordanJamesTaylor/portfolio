@@ -1,18 +1,18 @@
 .project-cards-container {
     display: flex;
+    /* 
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    */
 }
 
 .project-card-a, .project-card-b, .project-card-c  {
+    width: 23rem;
+    /* min-height: 39rem; */
     margin: 0 1rem 0 1rem;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-    /* position: relative; */
     text-align: left;
-    height: 39rem;
-    width: 23rem;
     border: solid white 1px;
     border-radius: 25px;
     background-color: #fff;
@@ -55,8 +55,8 @@
 .project-link-btn {
     display: inline-block;
     width: 21rem;
-    padding: 0.5rem 0 0.5rem 0;
-    margin: 0 0 5rem 1rem;
+    padding: 0.7rem 0 0.7rem 0;
+    margin: 0 0 1rem 1rem;
     border-radius: 15px;
     color: #fff;
     font-size: large;
