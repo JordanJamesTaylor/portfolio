@@ -3,17 +3,15 @@
 .sun, .resume-planet, .projects-planet, .writings-planet {
     position: absolute;
 }
-
-.sun:hover, .about-planet:hover, .projects-planet:hover, .blogs-planet:hover, .resume-planet:hover, .link-icons:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-}
 */
 
+.sun {
+    position: relative;
+    top: -50rem;
+}
 
 .projects-planet {
-    position: relative;
+    position: relative; 
     top: -60rem;
     right: -18rem;
 }
@@ -23,22 +21,24 @@
     top: -59rem;
     right: -25rem;
 }
+
 .resume-planet {
     position: relative;
+    z-index: 2;
     top: -53rem;
     right: -42.5rem;
-}
-
-
-.sun {
-    position: relative;
-    top: -50rem;
 }
 
 .projects-planet {
     position: relative;
     top: -60rem;
     right: -18rem;
+}
+
+.sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
 }
 
 
@@ -51,20 +51,32 @@
     padding-left: 6rem;
 }
 
+#projects-title {
+    margin-right: -10rem;
+}
+
 .intro {
     position: relative;
-    top: -60rem;
-    right: -18rem;
-    width: 200px;
+    top: -75rem;
+    right: -95rem;
+    width: 350px;
     height: 350px;
+    font-size: 32px;
 }
 
 .intro-name {
     font-family: 'Bruno Ace SC', 'cursive';
     cursor: default;
     color: #95C6FF;
+    cursor: none;
 }
 
 .link-icons {
-    margin: 0.5rem 1rem 0 0;
+    margin: 2rem 1rem 0 0.7rem;
+    height: 2.5rem;
+    border-radius: 25px;
+}
+
+.link-icons:hover {
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
 }

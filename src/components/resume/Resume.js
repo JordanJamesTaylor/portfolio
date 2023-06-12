@@ -1,12 +1,16 @@
 import React from 'react';
 
+import resume from '../../assests/JordanTaylorsResume.pdf';
+
 import './resume.css';
 
 export default function Resume() {
+
+    console.log()
     return(
         <div className='resume'>
             <div className='resume-intro'>
-                <a  href={``} target='_blank' className='resume-btn'><span className='resume-ship-emoji'>&#128640;</span>Download Full Resume</a>
+            <a href={resume} download='JordanTaylorsResume.pdf' className='resume-btn'><span className='resume-ship-emoji'>&#128640;</span>Download Full Resume</a>
                 <p className='resume-intro-text'>
                     Full Stack Developer with experience using frontend and backend technologies such as JavaScript, TypeScript, Node.js, React, Next.js, Ruby on Rails. Former lead Implementation Consultant and General Manager in the hospitality industry, focusing on creative problem-solving and innovation. Leveraged innovation and collaboration to execute complex projects leading to an increase in revenue, customer retention, and efficiency. Passionate about learning new things and staying current with existing technologies.
                 </p>
@@ -14,7 +18,7 @@ export default function Resume() {
             </div>
             <div className='resume-scroll'>
 
-                <h1 className='section-titles'>Technical Projects</h1>
+                <h1 className='resume-section-titles'>Technical Projects</h1>
 
                 <h1 className='resume-titles'>Space Invaders</h1>
                 <h4 className='resume-sub-titles'>
@@ -44,7 +48,7 @@ export default function Resume() {
                     <li>Notification feature to call upon users to upload a photo to their group.</li>
                 </ul>
 
-                <h1 className='section-titles'>Experience</h1>
+                <h1 className='resume-section-titles'>Experience</h1>
 
                 <h1 className='resume-titles'>National Express</h1>
                 <h4 className='resume-sub-titles'>Recruitment Specialist</h4>
@@ -64,7 +68,7 @@ export default function Resume() {
                     <li>Hiring and training of all venue employees</li>
                 </ul>
 
-                <h1 className='section-titles'>Education</h1>
+                <h1 className='resume-section-titles'>Education</h1>
 
                 <h1 className='resume-titles'>Flatiron School</h1>
                 <h4 className='resume-sub-titles'>Fullstack Web Developer</h4>

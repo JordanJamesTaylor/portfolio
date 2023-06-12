@@ -25,7 +25,7 @@
     cursor: pointer;
     background: none;
     margin: 0.5rem;
-    color: #000F83;
+    color: #fff;
 }
 
 .indicator-btns-active {
@@ -33,11 +33,11 @@
     cursor: pointer;
     background: none;
     margin: 5px;
-    color: #fff;
+    color: #ff6a00;
 }
 
 .arrow-btns:hover, .indicator-btns:hover{
     cursor: pointer;
-    color: #fff;
+    color: #ff6a00;
 }
 

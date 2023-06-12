@@ -53,6 +53,14 @@
     padding:10px;
 }
 
+.resume-section-titles {
+    color: #F4F9FF;
+    font-family: 'Bruno Ace SC', 'cursive';
+    font-size: 3rem;
+    cursor: default;
+    margin: 2.5rem 0 1rem 0;
+}
+
 .resume-titles, .resume-sub-titles {
     margin: 0.5rem 0 0.5rem;
 }

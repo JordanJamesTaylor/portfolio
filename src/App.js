@@ -111,7 +111,7 @@ export default function App() {
         </section>
 
         <section className='contact-container'>
-          <h1 className='section-titles'>Contact</h1>
+          <h1 className='section-titles-contact'>Contact</h1>
           <Contact />
         </section>
         

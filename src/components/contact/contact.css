@@ -1,0 +1,35 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-stamps {
+    text-align: left;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    color: #95C6FF;
+}
+
+.contact-logo {
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
+.contact-section-planets {
+    margin-left: 5rem;
+}
+
+.contact-icons-planets {
+    align-self: center;
+    height: 6rem;
+    width: 6rem;
+}
+
+.contact-email-icons-lottie {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}

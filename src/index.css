@@ -1,39 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-/* :-webkit-scrollbar {
-  display: none;
-} */
-/* 
+ 
 * {
   margin: 0;
   padding: 0;
-} */
-/* 
+}
+
 html {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  max-width: 1440px;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin:0;
-  padding: 0;
-  background-color: #16196F;
-} 
-*/
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html{
   font-size: 16px;
-  background-color: aqua;
-  border: solid 5px black;
+  background-color: #06072e;
+  -webkit-text-size-adjust: 100%;
+  cursor: none;
 }
 
 .body {
@@ -50,6 +26,7 @@ html{
 p {
   text-align: left;
   font-family: 'Comfortaa';
+  font-size: 20px;
   color: #95C6FF;
 } 
 
