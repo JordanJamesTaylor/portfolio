@@ -112,7 +112,7 @@ export default function App() {
 
         <section className='contact-container'>
           <h1 className='section-titles-contact'>Contact</h1>
-          <Contact />
+          <Contact about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
         </section>
         
       </div>

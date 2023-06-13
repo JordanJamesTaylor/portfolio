@@ -58,7 +58,9 @@
 .intro {
     position: relative;
     top: -75rem;
-    right: -95rem;
+    /* right: -95rem; */
+    float: right;
+    margin-right: 5rem;
     width: 350px;
     height: 350px;
     font-size: 32px;

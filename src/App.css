@@ -1,55 +1,6 @@
-/* .App {
-  text-align: center;
-  background-image: linear-gradient(#080A3E, #080A3E, #1d1f66);
-}
-
-.section-titles {
-  color: whitesmoke;
-  padding: 2%;
-  font-family: 'Bruno Ace SC', 'cursive';
-  cursor: default;
-  margin:0;
-}
-
-.about-container, .projects-container, .blogs-container, .resume-container, .contact-container {
-  margin-top: 10rem;
-  max-height: 1300px;
-}
-
-.header-container {
-  position: relative;
-  height: 100vh;
-  max-height: 500px;
-}
-
-.about-container {
-  margin-top: 25rem;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 2rem 2rem 2rem;
-}
-
-.blogs-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.resume-container {
-  margin-bottom: 100rem;
-}
-
-a {
-  text-decoration: none;
-} */
-
 .App {
-  /* width: 200px; */
-  width: 2000PX;
+  max-width: 2000px;
+  min-width: 1440px;
   background-image: linear-gradient(#080A3E, #080A3E, #1d1f66);
   box-shadow: 0 0 100px 0px rgba(0, 0, 0, 1);
 }
@@ -66,10 +17,11 @@ a {
 .header-container {
   overflow: hidden;
   max-height: 900px;
+  max-width: 100%;
+  /* border: solid 5px purple; */
 }
 
 .about-container {
-  /* border: solid 5px purple; */
 }
 
 .projects-container {
