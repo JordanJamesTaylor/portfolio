@@ -1,9 +1,30 @@
-/* .
+.orbital-paths {
+    position: relative;
+}
 
-.sun, .resume-planet, .projects-planet, .writings-planet {
+.sun, .projects-planet, .writings-planet, .resume-planet {
     position: absolute;
 }
-*/
+.sun {
+    top: 4rem;
+}
+
+.projects-planet {
+    top: 12rem;
+    left: 20rem
+}
+
+.writings-planet {
+    top: 25rem;
+    left: 25rem;
+}
+
+.resume-planet {
+    top: 10rem;
+    left: 42rem;
+}
+
+/* 
 
 .sun {
     position: relative;
@@ -33,14 +54,25 @@
     position: relative;
     top: -60rem;
     right: -18rem;
+} 
+
+.intro {
+    position: relative;
+    top: -75rem;
+    float: right;
+    margin-right: 5rem;
+    width: 350px;
+    height: 350px;
+    font-size: 32px;
 }
+
+*/
 
 .sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
     cursor: pointer;
     transform: scale(1.2);
     transition: all .2s ease-in-out;
 }
-
 
 #about-title, #projects-title, #writings-title, #resume-title{
     position: relative;
@@ -52,15 +84,17 @@
 }
 
 #projects-title {
-    margin-right: -10rem;
+    margin-left: -1.5rem;
+}
+
+#writings-title {
+    margin: -0.5rem 0 0 1rem;
 }
 
 .intro {
-    position: relative;
-    top: -75rem;
-    /* right: -95rem; */
-    float: right;
-    margin-right: 5rem;
+    position: absolute;
+    top: 20rem;
+    left: 95rem;
     width: 350px;
     height: 350px;
     font-size: 32px;

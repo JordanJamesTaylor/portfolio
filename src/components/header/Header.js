@@ -4,11 +4,13 @@ import './header.css';
 
 export default function Header({ about, projects, writings, resume, scrollToSection }) {
 
+    // put orbits and intro in two sep boxes and header as an outer box
     return (
         <div className='header'>
+            <div>
             <div className='orbital-paths'>
                 <img src={require('../../assests/orbital-lines.png')} alt='cartoon solar system background' />
-            </div>
+            {/* </div> */}
 
             <div className='sun'>
                 <img className='sun-img' src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>
@@ -36,9 +38,11 @@ export default function Header({ about, projects, writings, resume, scrollToSect
                     WRITINGS
                 </h1>
             </div>
+            </div>
+            </div>
 
             <div className='intro'>
-                <h1 className='intro-name' data-cursor-img={require("../../assests/resume-photo.png")}>I'm Jordan</h1>
+                <h2 className='intro-name' data-cursor-img={require("../../assests/resume-photo.png")}>I'm Jordan</h2>
                 <br />
                 <p>
                     Software Engineer with experience in JavaScript, Typescript, Node.js, React, Next.js, and Ruby, pursuing a career as a full stack developer. 

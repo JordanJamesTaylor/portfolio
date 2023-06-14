@@ -18,28 +18,11 @@
   overflow: hidden;
   max-height: 900px;
   max-width: 100%;
-  /* border: solid 5px purple; */
-}
-
-.about-container {
-}
-
-.projects-container {
-  /* border: solid 5px red; */
-}
-
-.blogs-container {
-  /* border: solid 5px green; */
-}
-
-.resume-container {
-  /* border: solid 5px blue; */
 }
 
 .contact-container {
   height: 100%;
   background-color: #090A3D;
-  /* border: solid 5px orange; */
 }
 
 .section-titles, .section-titles-contact{
@@ -48,6 +31,7 @@
   font-size: 3rem;
   cursor: default;
   margin-bottom: 5rem;
+  cursor: none;
 }
 
 .section-titles-contact {

@@ -34,10 +34,12 @@
     background: none;
     margin: 5px;
     color: #ff6a00;
+    transform: scale(1.5);
 }
 
 .arrow-btns:hover, .indicator-btns:hover{
     cursor: pointer;
     color: #ff6a00;
+    transform: scale(1.5);
 }
 

@@ -1,41 +1,42 @@
-.contact {
+.contact-footer {
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
+}
+  
+.contact-logo {
+  flex: 1;
+  padding-left: 1rem;
 }
 
 .contact-stamps {
-    text-align: left;
     font-family: 'Comfortaa';
     font-size: 20px;
     color: #95C6FF;
-    margin-bottom: -1rem;
 }
 
-.contact-logo {
-    align-self: flex-start;
-    min-width: 10rem;
-    margin-left: 2rem;
-}
-
-.contact-section-planets {
-    margin: -1rem 0 0 33rem;
-}
+.contact-planets {
+    width: 400px;
+}  
 
 .contact-icons-planets {
-    align-self: center;
     height: 6rem;
     width: 6rem;
     cursor: pointer;
 }
 
-.contact-icons-planets:hover {
-    transform: scale(1.4);
+.email-icons-lottie {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
-.contact-email-icons {
-    margin-top: -1rem;
-    padding-left: 21rem;
+.email-icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.lottie-img {
+    padding-right: 1rem;
 }

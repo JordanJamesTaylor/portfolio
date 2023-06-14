@@ -59,6 +59,7 @@
     font-size: 3rem;
     cursor: default;
     margin: 2.5rem 0 1rem 0;
+    cursor: none;
 }
 
 .resume-titles, .resume-sub-titles {

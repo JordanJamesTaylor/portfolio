@@ -14,6 +14,7 @@ import './App.css';
 
 export default function App() {
 
+  // move into BlogsCarousel
   // my medium profile
   const [profile, setProfile] = useState({
     name: 'Jordan Taylor',
@@ -64,10 +65,7 @@ export default function App() {
   });
 
   // grab window element and scroll to component
-  const scrollToSection = (elementRef) => {
-
-    console.log('ELEMENT: ', elementRef);
-    
+  const scrollToSection = (elementRef) => {    
     window.scrollTo({
         // scroll to top of selected section
         top: elementRef.current.offsetTop,
@@ -80,16 +78,18 @@ export default function App() {
   const cursor = new MouseFollower({
     container: document.body,
     skewing: 1,
-    skewingText: 1
+    skewingText: 1,
   });
   MouseFollower.registerGSAP(gsap);
 
   return (
+    // switch div to main
+    // switch header div to header el
       <div className='App'>
 
-        <section className='header-container'>
+        <header className='header-container'>
           <Header about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
-        </section>
+        </header>
 
         <section ref={about} className='about-container'>
           <About />
@@ -110,10 +110,10 @@ export default function App() {
           <Resume />
         </section>
 
-        <section className='contact-container'>
+        <footer className='contact-container'>
           <h1 className='section-titles-contact'>Contact</h1>
           <Contact about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
-        </section>
+        </footer>
         
       </div>
   );

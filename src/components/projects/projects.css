@@ -1,5 +1,7 @@
 .project-cards-container {
     display: flex;
+    /* space around */
+    justify-content: space-around;
 }
 
 .project-card-a, .project-card-b, .project-card-c  {
@@ -51,7 +53,7 @@
     display: inline-block;
     width: 94%;
     padding: 1rem 0 1rem 0;
-    margin-top: rem;
+    /* margin-top: rem; */
     margin: 1rem 0 1rem 1rem;
     border-radius: 15px;
     color: #fff;
