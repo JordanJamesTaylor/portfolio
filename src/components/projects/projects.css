@@ -1,10 +1,9 @@
+/* 
 .project-cards-container {
     display: flex;
-    /* space around */
-    justify-content: space-around;
 }
 
-.project-card-a, .project-card-b, .project-card-c  {
+.project-cards {
     width: 35rem;
     height: 45rem;
     margin: 0 1rem 0 1rem;
@@ -22,7 +21,7 @@
     border-radius: 25px;
 }
 
-.project-card-a:hover, .project-card-b:hover, .project-card-c:hover {
+.project-cards:hover {
     color: #fff;
     background: none;
 }
@@ -53,7 +52,6 @@
     display: inline-block;
     width: 94%;
     padding: 1rem 0 1rem 0;
-    /* margin-top: rem; */
     margin: 1rem 0 1rem 1rem;
     border-radius: 15px;
     color: #fff;
@@ -73,3 +71,61 @@
     margin: 0 18rem 0 2rem;
 }
 
+*/
+
+.project-cards {
+  display: flex;
+}
+
+@media(320px <= width <= 480px){
+  .project-cards-container{
+    flex-direction: column;
+  }
+  
+  .project-cards {
+    flex-direction: column;
+    height: 45rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 25PX;
+    background-color: #fff;
+  }
+
+  .project-card-img {
+    width: 20.5rem;
+    height: 15rem;
+    border-radius: 25PX;
+    margin-top: 0.5rem;
+  }
+
+  .project-card-title {
+    align-self: start;
+    margin: 1rem 0 1rem 1rem;
+    font-family: 'Bruno Ace SC';
+    color: #012754;
+  }
+
+  .project-card-text {
+    color: #000;
+    margin: 0rem 1rem 1rem 1rem;
+    line-height: 1.4rem;
+  }
+
+  .project-link-btn {
+    width: 91%;
+    padding: 0;
+    /* margin-top: 41rem; */
+    border-radius: 15px;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Comfortaa';
+    text-align: start;
+    background-image: linear-gradient(to right, #0D1980, #0B0F47);
+  }
+
+  .project-ship-emoji {
+    margin: 1rem 3.5rem 1rem 0.5rem;
+  }
+}

@@ -8,7 +8,7 @@ export default function Projects() {
   return(
     <div className='project-cards-container'>
 
-    <div className='project-card-a'>
+    <div className='project-cards'>
       <img className='project-card-img' src={`${spaceBackground}`} alt='blog title image'data-cursor-text='Track Bugs!' />
       <h2 className='project-card-title' data-cursor-text='Track Bugs!'>Blunder-Bug</h2>
       <p className='project-card-text' data-cursor-text='Track Bugs!'>
@@ -17,7 +17,7 @@ export default function Projects() {
       <a  href={`https://github.com/JordanJamesTaylor/Bug-Tracker`} target='_blank' className='project-link-btn'><span className='project-ship-emoji'>&#128640;</span>View on GitHub</a>
     </div>
     
-    <div className='project-card-b'> 
+    <div className='project-cards'> 
       <img className='project-card-img' src={`${spaceBackground}`} alt='blog title image' data-cursor-text='Shoot Aliens!'/>
       <h2 className='project-card-title' data-cursor-text='Shoot Aliens!'>Space Invaders</h2>
       <p className='project-card-text' data-cursor-text='Shoot Aliens!'>
@@ -26,7 +26,7 @@ export default function Projects() {
       <a  href={`https://github.com/JordanJamesTaylor/Space-Invaders`} target='_blank' className='project-link-btn'><span className='project-ship-emoji'>&#128640;</span>View on GitHub</a>
     </div>
 
-    <div className='project-card-c'>
+    <div className='project-cards'>
       <img className='project-card-img' src={`${spaceBackground}`} alt='blog title image' data-cursor-text='Track Tasks!'/>
       <h2 className='project-card-title' data-cursor-text='Track Tasks!'>GetItDone</h2>
       <p className='project-card-text' data-cursor-text='Track Tasks!'>

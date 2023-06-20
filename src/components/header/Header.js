@@ -7,11 +7,10 @@ export default function Header({ about, projects, writings, resume, scrollToSect
     // put orbits and intro in two sep boxes and header as an outer box
     return (
         <div className='header'>
-            <div>
             <div className='orbital-paths'>
                 <img src={require('../../assests/orbital-lines.png')} alt='cartoon solar system background' />
-            {/* </div> */}
-
+            </div>
+{/*             
             <div className='sun'>
                 <img className='sun-img' src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>
                 <h1 id='about-title'>
@@ -53,7 +52,7 @@ export default function Header({ about, projects, writings, resume, scrollToSect
                 <a href='https://www.linkedin.com/in/jordan-taylor-903471242/' target='_blank'>
                     <img className='link-icons' src={require('../../assests/linkedin-icon.png')} />
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -1,4 +1,4 @@
-.orbital-paths {
+/* .orbital-paths {
     position: relative;
 }
 
@@ -22,7 +22,7 @@
 .resume-planet {
     top: 10rem;
     left: 42rem;
-}
+} */
 
 /* 
 
@@ -68,7 +68,7 @@
 
 */
 
-.sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
+/* .sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
     cursor: pointer;
     transform: scale(1.2);
     transition: all .2s ease-in-out;
@@ -115,4 +115,15 @@
 
 .link-icons:hover {
     box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
+} */
+
+@media(320px <= width <= 480px){
+    .orbital-paths {
+        display: relative;
+    }
+
+    .orbital-paths img{
+        height: 5rem;
+        width: 5rem;
+    }
 }

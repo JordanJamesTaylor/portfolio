@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BlogItem from './BlogItem';
 
 import './blogcarousel.css';
 
-export default function BlogsCarousel({ profile, blogs }) {
+export default function BlogsCarousel({ blogs }) {
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(3);
 
     const blogCards = blogs.posts.map((post, index) => {
         return(
-            <BlogItem profile={profile} post={post} index={index} />
+            <BlogItem post={post} />
         );
     });
     
@@ -56,5 +56,16 @@ export default function BlogsCarousel({ profile, blogs }) {
             </div>
             </div>
         </div>
+        // <div>
+        //     <h1>Slider Demo</h1>
+        //     <div className='slider'>
+        //         <div className='slide-container'>
+        //             <div className='slide'></div>
+        //             <div className='slide'></div>
+        //             <div className='slide'></div>
+        //             <div className='slide'></div>
+        //         </div>
+        //     </div>
+        // </div>
     );
 };

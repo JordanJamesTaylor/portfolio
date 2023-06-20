@@ -5,9 +5,9 @@ import './about.css';
 
 export default function About() {
 return (
-  <Fragment>
+  <div className='about'>
     <div className='bio-title'>
-        <h1 className='name' data-cursor-text='Hello there!'>Hi, I'm Jordan Taylor</h1>
+        <h1 className='name' data-cursor-text='Hello there!'>I'm Jordan Taylor</h1>
       <div className='type-writer'>
         <Typewriter
             options={{
@@ -28,8 +28,7 @@ return (
             <br/>
               I hope you enjoy your stay here on my website, below you'll find my past projects, blog posts, and resume.
             </p>
-
     </div>
-  </Fragment>
+  </div>
   );
 };

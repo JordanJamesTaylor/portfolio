@@ -1,4 +1,4 @@
-.contact-footer {
+/* .contact-footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -39,4 +39,34 @@
 
 .lottie-img {
     padding-right: 1rem;
+} */
+
+@media(320px <= width <= 480px){
+    .contact-logo {
+        flex: 1;
+        align-self: center;
+    }
+
+    .contact-logo img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;    
+    }
+    
+    .contact-stamps {
+        margin-bottom: 0.5rem;
+        font-family: 'Comfortaa';
+        font-size: 20px;
+        color: #95C6FF;
+    }
+
+    .contact-link-icons img {
+        height: 2rem;
+        width: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .contact-planets {
+        display: none;
+    }
 }

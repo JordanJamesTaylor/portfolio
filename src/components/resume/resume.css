@@ -1,4 +1,4 @@
-.resume {
+/* .resume {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -45,9 +45,7 @@
 .resume-scroll {
     height: 40rem;
     width: 25rem;
-    /* margin-left: 0rem; */
     text-align: left;
-    /* float: right; */
     overflow: auto;
     color:#B4D6FF;
     padding:10px;
@@ -62,7 +60,7 @@
     cursor: none;
 }
 
-.resume-titles, .resume-sub-titles {
+.resume-titles, .resume-sub-titles {5rem
     margin: 0.5rem 0 0.5rem;
 }
 
@@ -76,13 +74,74 @@ ul {
     display: block;
 }
 
-/* Track */
 .resume-scroll::-webkit-scrollbar-track {
     display: none;
 }
  
-/* Handle */
 .resume-scroll::-webkit-scrollbar-thumb {
     background: #fff; 
     border-radius: 10px;
+} */
+@media(320px <= width <= 480px){
+    .resume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-btn {
+        position: absolute;
+        height: 3rem;
+        width: 85%;
+        padding: 0;
+        border-radius: 15px;
+        color: #fff;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-family: 'Comfortaa';
+        text-align: start;
+        background-image: linear-gradient(to right, #0D1980, #0B0F47);
+    }
+
+    .project-ship-emoji {
+        margin: 0 3.5rem 0 0.5rem;
+    }
+
+    .resume-intro {
+        padding-left: 0.5rem;
+    }
+
+    .resume-intro-text {
+        margin-top: 4rem;
+    }
+    
+    .skill-icons {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .resume-scroll {
+        height: 40rem;
+        text-align: left;
+        overflow: auto;
+        color:#B4D6FF;
+        padding:10px;
+    }
+    
+    .resume-section-titles {
+        margin: 0.5rem 0 0.5rem;
+        color: #F4F9FF;
+        font-family: 'Bruno Ace SC', 'cursive';
+        font-size: 3rem;
+        cursor: default;
+        margin: 2.5rem 0 1rem 0;
+        cursor: none;
+    }
+
+    .resume-titles, .resume-sub-titles {
+        margin: 0.5rem 0 0.5rem;
+    }
+    
+    ul {
+        list-style-type: circle;
+    }
 }

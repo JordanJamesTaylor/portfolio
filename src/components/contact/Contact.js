@@ -33,15 +33,15 @@ export default function Contact({ about, projects, writings, resume, scrollToSec
             </div>
 
             <div className="email-icons-lottie">
-                <div className='email-icons'>
-
-                <a href="mailto: jordjamestaylor@gmail.com"  className='contact-stamps'>jordjamestaylor@gmail.com</a>    
-                <div>
+                {/* was <div className='email-icons'> */}
+                <div className='email'>
+                    <a href="mailto: jordjamestaylor@gmail.com"  className='contact-stamps'>jordjamestaylor@gmail.com</a>    
+                <div className='contact-link-icons'>
                     <a href='https://github.com/JordanJamesTaylor' target='_blank'>
-                        <img className='link-icons' src={require('../../assests/github-icon.png')} />
+                        <img src={require('../../assests/github-icon.png')} />
                     </a>
                     <a href='https://www.linkedin.com/in/jordan-taylor-903471242/' target='_blank'>
-                        <img className='link-icons' src={require('../../assests/linkedin-icon.png')} />
+                        <img src={require('../../assests/linkedin-icon.png')} />
                     </a>
                 </div>
                 </div>

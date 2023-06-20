@@ -24,7 +24,7 @@ export default function BlogItem({ post }) {
                 {post.title}
             </h2>
             <p className='blog-card-text'>
-                {`${toText(post.description.substr(0, 750))}...`}
+                {`${toText(post.description.substr(0, 500))}...`}
             </p>
             <a  href={`${post.link}`} target='_blank' className='blog-link-btn'><span className='blog-ship-emoji'>&#128640;</span>Read on Medium
             </a>

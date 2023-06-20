@@ -1,6 +1,17 @@
+.about {
+    display: flex;
+}
+
+/* 
 .bio-title {
     min-width: 35rem;
 }
+
+.bio {
+    margin-top: 5rem;
+    max-width: 60rem;
+    font-size: 1.5rem;
+} 
 
 .name {
     font-size: 3.5rem;
@@ -9,15 +20,39 @@
 }
 
 .type-writer {
-    /* padding-left: 1rem; */
     font-family: 'Bruno Ace SC', 'cursive';
     font-size: 2.5rem;
     font-weight: bold;
     color: #ff6a00;
 }
+*/
 
-.bio {
-    margin-top: 5rem;
-    max-width: 60rem;
-    font-size: 1.5rem;
+@media(320px <= width <= 480px){
+    .about{
+        flex-direction: column;
+        margin-left: 0.5rem;
+    }
+
+    .bio-title {
+        width: 100%
+    }
+
+    .name {
+        font-family: 'Bruno Ace SC', 'cursive';
+        font-size: 1.7rem;
+        color: #95C6FF;
+    }
+
+    .type-writer {
+        height: 3rem;
+        margin-bottom: 1rem;
+        font-family: 'Bruno Ace SC', 'cursive';
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff6a00;
+    }
+
+    .bio {
+        width: 90%;
+    }
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { createTheme } from '@mui/material';
+// import { createTheme } from '@mui/material';
 import axios from 'axios';
 import MouseFollower from "mouse-follower";
 import Header from './components/header/Header';
@@ -14,14 +14,6 @@ import './App.css';
 
 export default function App() {
 
-  // move into BlogsCarousel
-  // my medium profile
-  const [profile, setProfile] = useState({
-    name: 'Jordan Taylor',
-    profileImage: '',
-    profileUrl: ''
-  });
-  // my medium posts
   const [blogs, setBlogs] = useState({
       posts: [],
       isLoading: true,
@@ -33,11 +25,8 @@ export default function App() {
       const res = axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jordjamestaylor')
       const blogPosts = await res;
 
-      const image = blogPosts.data.feed.image;
-      const link = blogPosts.data.feed.link;
       const blogs = blogPosts.data.items;
             
-      setProfile((p) => ({...p, profileUrl: link, profileImage: image}));
       setBlogs({posts: blogs, isLoading: false});
       
     }catch(err){
@@ -55,15 +44,6 @@ export default function App() {
   const writings = useRef(null);
   const resume = useRef(null);
 
-  // material ui customisation
-  const theme = createTheme({
-    typography: {
-      fontFamily: [
-        'Bruno Ace SC', 'cursive',
-      ].join(','),
-    },
-  });
-
   // grab window element and scroll to component
   const scrollToSection = (elementRef) => {    
     window.scrollTo({
@@ -75,21 +55,21 @@ export default function App() {
   };
   
   // following cursor animations
-  const cursor = new MouseFollower({
-    container: document.body,
-    skewing: 1,
-    skewingText: 1,
-  });
-  MouseFollower.registerGSAP(gsap);
+  // const cursor = new MouseFollower({
+  //   container: document.body,
+  //   skewing: 1,
+  //   skewingText: 1,
+  // });
+  // MouseFollower.registerGSAP(gsap);
 
   return (
     // switch div to main
     // switch header div to header el
-      <div className='App'>
-
-        <header className='header-container'>
+      <main className='App'>
+      
+        {/* <header className='header-container'>
           <Header about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
-        </header>
+        </header> */}
 
         <section ref={about} className='about-container'>
           <About />
@@ -100,9 +80,9 @@ export default function App() {
           <Projects />
         </section>
 
-        <section ref={writings} className='blogs-container'>
+        <section ref={writings} className='writings-container'>
           <h1 className='section-titles'>Writings</h1>
-          <BlogsCarousel profile={profile} blogs={blogs} />
+          <BlogsCarousel blogs={blogs} />
         </section>
 
         <section ref={resume} className='resume-container'>
@@ -115,6 +95,6 @@ export default function App() {
           <Contact about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
         </footer>
         
-      </div>
+      </main>
   );
 };
