@@ -118,6 +118,16 @@
         color: #ff6a00;
         transform: scale(1.5);
     }
+
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      
+      .fade-in {
+        animation: fadeIn 500ms ease-in-out;
+      }
 }
 
 /*

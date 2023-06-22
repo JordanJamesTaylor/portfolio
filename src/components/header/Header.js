@@ -52,3 +52,4 @@ export default function Header({ about, projects, writings, resume, scrollToSect
         </div>
     );
 };
+
