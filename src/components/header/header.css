@@ -1,98 +1,108 @@
-@media(0px <= width <= 999px){
+.orbital-paths-planets {
+    position: relative;
+    z-index: 0;
+}
+
+.orbital-paths img {
+    width: 60rem
+}
+
+.sun, .projects-planet, .writings-planet, .resume-planet {
+    position: absolute;
+    width: 5rem;
+}
+
+.sun {
+    top: 3.5rem;
+    left: -1rem;
+}
+
+.sun img {
+    width: 16rem;
+}
+
+.projects-planet {
+    top: 19.5rem;
+    left: 10rem
+}
+
+.projects-planet img {
+    width: 10rem;
+} 
+
+.resume-planet {
+    top: 13rem;
+    left: 43rem;
+} 
+
+.resume-planet img {
+    width: 10rem;
+} 
+
+.writings-planet {
+    top: 39rem;
+    left: 25rem;
+}
+
+.writings-planet img {
+    width: 15rem;
+}
+
+.sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+#about-title, #projects-title, #writings-title, #resume-title{
+    position: relative;
+    font-family: 'Bruno Ace SC', 'cursive';
+    color: white;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
+    padding-left: 6rem;
+}
+
+#projects-title {
+    margin-left: -1.5rem;
+}
+
+#writings-title {
+    margin: -0.5rem 0 0 1rem;
+}
+
+.intro {
+    align-self: flex-end;
+    width: 20rem;
+    margin: 0 0 13rem 3rem;
+}
+
+.intro-name {
+    font-family: 'Bruno Ace SC', 'cursive';
+    cursor: default;
+    color: #95C6FF;
+    cursor: none;
+}
+
+.link-icons {
+    margin: 2rem 1rem 0 0.7rem;
+    height: 2.5rem;
+    border-radius: 25px;
+}
+
+.link-icons:hover {
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
+}
+
+@media(0px <= width <= 899px){
     .header{
         display: none;
     }
 }
 
-/*******************************************************************************/
-/*******************************************************************************/
-/*******************************************************************************/
-
-@media(1000px <= width){
+@media(1200px <= width){
     .header {
         display: flex;
-        justify-content: row;
-    }
-
-    .orbital-paths-planets {
-        position: relative;
-        z-index: 0;
-    }
-
-    .orbital-paths img {
-        width: 60rem
-    }
-
-    .sun, .projects-planet, .writings-planet, .resume-planet {
-        position: absolute;
-        width: 5rem;
-    }
-
-    .sun {
-        top: 2.5rem;
-    }
-
-    .sun img {
-        width: 8rem;
-    }
-
-    .projects-planet {
-        top: 13.5rem;
-        left: 10rem
-    }
-
-    .writings-planet {
-        top: 27rem;
-        left: 18rem;
-    }
-
-    .resume-planet {
-        top: 10rem;
-        left: 31rem;
-    } 
-
-    .sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
-        cursor: pointer;
-        transform: scale(1.2);
-        transition: all .2s ease-in-out;
-    }
-
-    #about-title, #projects-title, #writings-title, #resume-title{
-        position: relative;
-        font-family: 'Bruno Ace SC', 'cursive';
-        color: white;
-        transform-origin: 0 0;
-        transform: rotate(-30deg);
-        padding-left: 6rem;
-    }
-
-    #projects-title {
-        margin-left: -1.5rem;
-    }
-
-    #writings-title {
-        margin: -0.5rem 0 0 1rem;
-    }
-
-    .intro {
-        align-self: center;
-        width: 20rem;
-    }
-
-    .intro-name {
-        font-family: 'Bruno Ace SC', 'cursive';
-        cursor: default;
-        color: #95C6FF;
-        cursor: none;
-    }
-
-    .link-icons {
-        margin: 2rem 1rem 0 0.7rem;
-        height: 2.5rem;
-        border-radius: 25px;
-    }
-
-    .link-icons:hover {
-        box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
+        margin-bottom: 5rem;
     }
 }

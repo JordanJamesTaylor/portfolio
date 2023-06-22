@@ -14,7 +14,7 @@ export default function Projects() {
       <p className='project-card-text' data-cursor-text='Track Bugs!'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
-      <a  href={`https://github.com/JordanJamesTaylor/GetItDone`} target='_blank' className='project-link-btn'>
+      <a  href={`https://github.com/JordanJamesTaylor/Bug-Tracker`} target='_blank' className='project-link-btn'>
         <span>&#128640;</span>
         <span style={{ flex: '1 1 auto'}}></span>
         <span>View on GitHub</span>
@@ -27,7 +27,7 @@ export default function Projects() {
       <p className='project-card-text' data-cursor-text='Shoot Aliens!'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
-      <a  href={`https://github.com/JordanJamesTaylor/GetItDone`} target='_blank' className='project-link-btn'>
+      <a  href={`https://github.com/JordanJamesTaylor/Space-Invaders`} target='_blank' className='project-link-btn'>
         <span>&#128640;</span>
         <span style={{ flex: '1 1 auto'}}></span>
         <span>View on GitHub</span>

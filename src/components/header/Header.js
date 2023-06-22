@@ -3,13 +3,12 @@ import React from 'react';
 import './header.css';
 
 export default function Header({ about, projects, writings, resume, scrollToSection }) {
-
     // put orbits and intro in two sep boxes and header as an outer box
     return (
         <div className='header'>
             <div className='orbital-paths-planets'>
                 <div className='orbital-paths'>
-                    <img src={require('../../assests/orbital-lines.png')} alt='cartoon solar system background' />
+                    <img src={require('../../assests/orbital-lines2.png')} alt='cartoon solar system background' />
                 </div>
                 <div className='sun'>
                     <img className='sun-img' src={require('../../assests/sun.png')} onClick={() => scrollToSection(about)}/>

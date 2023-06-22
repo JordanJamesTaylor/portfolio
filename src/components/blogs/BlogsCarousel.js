@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import BlogItem from './BlogItem';
 
 import './blogcarousel.css';
@@ -44,7 +44,7 @@ export default function BlogsCarousel({ blogs }) {
             </div>
             <div className='carousel-btns-container'>
             <div className='indicators'>
-                {blogCards.map((blog, index) => {
+                {blogCards.map((index) => {
                     return(
                         <button onClick={(e) => handleJump(e.target.id)} className={`${index===activeIndex ? 'indicator-btns-active' : 'indicator-btns'}`}>
                             <span id={index} className='material-symbols-outlined'>
@@ -56,16 +56,5 @@ export default function BlogsCarousel({ blogs }) {
             </div>
             </div>
         </div>
-        // <div>
-        //     <h1>Slider Demo</h1>
-        //     <div className='slider'>
-        //         <div className='slide-container'>
-        //             <div className='slide'></div>
-        //             <div className='slide'></div>
-        //             <div className='slide'></div>
-        //             <div className='slide'></div>
-        //         </div>
-        //     </div>
-        // </div>
     );
 };

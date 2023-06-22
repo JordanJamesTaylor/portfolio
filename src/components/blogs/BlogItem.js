@@ -1,13 +1,8 @@
 import React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 
 import './blogitem.css';
 
 export default function BlogItem({ post }) {
-    
     // remove html
     function toText(node) {
         let tag = document.createElement("div");
@@ -28,12 +23,7 @@ export default function BlogItem({ post }) {
             <p className='blog-card-text'>
                 {`${toText(post.description.substr(0, 500))}...`}
             </p>
-            {/*
-            <a  href={`${post.link}`} target='_blank' className='blog-link-btn'>&#128640;<span className='blog-ship-emoji'></span>Read on Medium
-            </a> 
-            */}
-
-            <a  href={`https://github.com/JordanJamesTaylor/GetItDone`} target='_blank' className='blog-link-btn'>
+            <a  href={post.link} target='_blank' className='blog-link-btn'>
                     <span>&#128640;</span>
                     <span style={{ flex: '1 1 auto'}}></span>
                     <span>Read on Medium</span>

@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-// import { createTheme } from '@mui/material';
 import axios from 'axios';
 import MouseFollower from "mouse-follower";
 import Header from './components/header/Header';
@@ -37,13 +36,11 @@ export default function App() {
   useEffect(() => {
     getBlogPosts();
   }, []);
-
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
   const writings = useRef(null);
   const resume = useRef(null);
-
   // grab window element and scroll to component
   const scrollToSection = (elementRef) => {    
     window.scrollTo({
@@ -53,7 +50,6 @@ export default function App() {
       },
     );
   };
-  
   // following cursor animations
   const cursor = new MouseFollower({
     container: document.body,
@@ -66,34 +62,27 @@ export default function App() {
     // switch div to main
     // switch header div to header el
       <main className='App'>
-      
         <header className='header-container'>
           <Header about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
         </header>
-
         <section ref={about} className='about-container'>
           <About />
         </section>
-
         <section ref={projects} className='projects-container'>
           <h1 className='section-titles'>Projects</h1>
           <Projects />
         </section>
-
         <section ref={writings} className='writings-container'>
           <h1 className='section-titles'>Writings</h1>
           <BlogsCarousel blogs={blogs} />
         </section> 
-
         <section ref={resume} className='resume-container'>
           <h1 className='section-titles'>Resume</h1>
           <Resume />
         </section>
-
         <footer className='contact-container'>
           <Contact about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
         </footer> 
-        
       </main>
   );
 };

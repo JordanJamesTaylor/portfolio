@@ -10,10 +10,7 @@ export default function Contact({ about, projects, writings, resume, scrollToSec
     const defaultOptions = {
         loop: true,
         autoplay: true, 
-        animationData: astronaut,
-        // rendererSettings: {
-        //   preserveAspectRatio: 'xMidYMid slice'
-        // }
+        animationData: astronaut
       };
 
 
@@ -33,7 +30,6 @@ export default function Contact({ about, projects, writings, resume, scrollToSec
             </div>
 
             <div className="email-icons-lottie">
-                {/* was <div className='email-icons'> */}
                 <div className='email'>
                     <a href="mailto: jordjamestaylor@gmail.com"  className='contact-stamps'>jordjamestaylor@gmail.com</a>    
                 <div className='contact-link-icons'>

@@ -1,16 +1,13 @@
 import React from 'react';
-
 import resume from '../../assests/JordanTaylorsResume.pdf';
 
 import './resume.css';
 
 export default function Resume() {
-
-    console.log()
     return(
         <div className='resume'>
             <div className='resume-intro'>
-                <a  href={`https://github.com/JordanJamesTaylor/GetItDone`} target='_blank' className='resume-btn'>
+                <a  href={resume} download='JordanTaylorsResume.pdf'   className='resume-btn'>
                     <span>&#128640;</span>
                     <span style={{ flex: '1 1 auto'}}></span>
                     <span>Download Resum</span>
