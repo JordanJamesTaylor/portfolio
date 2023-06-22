@@ -1,131 +1,93 @@
-/* 
-.project-cards-container {
-    display: flex;
+.project-link-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  width: 91%;
+  border-radius: 15px;
+  color: #fff;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Comfortaa';
+  background-image: linear-gradient(to right, #0D1980, #0B0F47);
 }
 
-.project-cards {
-    width: 35rem;
-    height: 45rem;
-    margin: 0 1rem 0 1rem;
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-    text-align: left;
-    border: solid white 1px;
-    border-radius: 25px;
-    background-color: #fff;
-    transition: all .2s ease-in-out;
-    cursor: none;
+.project-card-a, .project-card-b, .project-card-c{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 25PX;
+  background-color: #fff;
 }
 
 .project-card-img {
-    width: 100%;
-    border-radius: 25px;
-}
-
-.project-cards:hover {
-    color: #fff;
-    background: none;
+  width: 95%;
+  border-radius: 25PX;
 }
 
 .project-card-title {
-    margin: 1rem 0 1rem 1rem;
-    max-width: 30rem;
-    font-weight: 'bold';
-    font-family: 'Bruno Ace SC'; 
-    color: #012754;
-}
-
-.project-card-a:hover .project-card-title, .project-card-b:hover .project-card-title, .project-card-c:hover .project-card-title {
-    color: #b4d6ff;
+  align-self: start;
+  margin: 1rem 0 1rem 1rem;
+  font-family: 'Bruno Ace SC';
+  color: #012754;
 }
 
 .project-card-text {
-    color: #000;
-    margin: 0rem 1rem 1rem 1rem;
-    line-height: 1.4rem;
+  color: #000;
+  margin: 0rem 1rem 1rem 1rem;
+  line-height: 1.4rem;
 }
 
-.project-card-a:hover .project-card-text, .project-card-b:hover .project-card-text, .project-card-c:hover .project-card-text {
-    color: #b4d6ff;
-}
-
-.project-link-btn {
-    display: inline-block;
-    width: 94%;
-    padding: 1rem 0 1rem 0;
-    margin: 1rem 0 1rem 1rem;
-    border-radius: 15px;
-    color: #fff;
-    font-size: large;
-    font-weight: 900;
-    font-family: 'Comfortaa';
-    text-align: start;
-    background-image: linear-gradient(to right, #0D1980, #0B0F47);
-}
-
-.project-link-btn:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
-}
-
-.project-ship-emoji {
-    margin: 0 18rem 0 2rem;
-}
-
-*/
-
-.project-cards {
-  display: flex;
-}
-
-@media(320px <= width <= 480px){
+@media(0px <= width <= 999px){
   .project-cards-container{
     flex-direction: column;
   }
-  
-  .project-cards {
-    flex-direction: column;
-    height: 45rem;
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+@media(1000px <= width){
+  .project-cards-container {
+    display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 110%;
+  }
+
+  .project-card-a, .project-card-b, .project-card-c{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0 0.3rem 2rem 0.3rem;
     border-radius: 25PX;
-    background-color: #fff;
   }
 
-  .project-card-img {
-    width: 20.5rem;
-    height: 15rem;
-    border-radius: 25PX;
-    margin-top: 0.5rem;
+  .project-card-a:hover, .project-card-b:hover, .project-card-c:hover {
+    /* color: #fff; NOT CHANGIND COLOUR */
+    border: solid #fff 2px;
+    background: none;
   }
 
-  .project-card-title {
-    align-self: start;
-    margin: 1rem 0 1rem 1rem;
-    font-family: 'Bruno Ace SC';
-    color: #012754;
-  }
-
-  .project-card-text {
-    color: #000;
-    margin: 0rem 1rem 1rem 1rem;
-    line-height: 1.4rem;
-  }
-
-  .project-link-btn {
-    width: 91%;
-    padding: 0;
-    /* margin-top: 41rem; */
-    border-radius: 15px;
+  .project-card-a:hover p, .project-card-b:hover p, .project-card-c:hover p{
     color: #fff;
-    line-height: 3rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-    font-family: 'Comfortaa';
-    text-align: start;
-    background-image: linear-gradient(to right, #0D1980, #0B0F47);
   }
 
-  .project-ship-emoji {
-    margin: 1rem 3.5rem 1rem 0.5rem;
+  .project-card-a:hover h2, .project-card-b:hover h2, .project-card-c:hover h2{
+    color: #fff;
+  }
+
+  .project-link-btn:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: scale(1.03);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
   }
 }

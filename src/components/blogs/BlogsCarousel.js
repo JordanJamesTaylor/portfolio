@@ -30,13 +30,13 @@ export default function BlogsCarousel({ blogs }) {
     return (
         <div className='blogs-carousel'>
             <div className='current-blog'>
-            <button className='arrow-btns'onClick={handlePrevious}>
-            <span className="material-symbols-outlined">
-                arrow_back_ios
-            </span>
+            <button className='arrow-btns-prev'onClick={handlePrevious}>
+                <span className="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
             </button>
             {blogCards[activeIndex]}
-            <button className='arrow-btns'onClick={handleNext}>
+            <button className='arrow-btns-next'onClick={handleNext}>
                 <span className="material-symbols-outlined">
                     arrow_forward_ios
                 </span>

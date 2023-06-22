@@ -1,129 +1,96 @@
-/* .orbital-paths {
-    position: relative;
+@media(0px <= width <= 999px){
+    .header{
+        display: none;
+    }
 }
 
-.sun, .projects-planet, .writings-planet, .resume-planet {
-    position: absolute;
-}
-.sun {
-    top: 4rem;
-}
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
 
-.projects-planet {
-    top: 12rem;
-    left: 20rem
-}
-
-.writings-planet {
-    top: 25rem;
-    left: 25rem;
-}
-
-.resume-planet {
-    top: 10rem;
-    left: 42rem;
-} */
-
-/* 
-
-.sun {
-    position: relative;
-    top: -50rem;
-}
-
-.projects-planet {
-    position: relative; 
-    top: -60rem;
-    right: -18rem;
-}
-
-.writings-planet {
-    position: relative;
-    top: -59rem;
-    right: -25rem;
-}
-
-.resume-planet {
-    position: relative;
-    z-index: 2;
-    top: -53rem;
-    right: -42.5rem;
-}
-
-.projects-planet {
-    position: relative;
-    top: -60rem;
-    right: -18rem;
-} 
-
-.intro {
-    position: relative;
-    top: -75rem;
-    float: right;
-    margin-right: 5rem;
-    width: 350px;
-    height: 350px;
-    font-size: 32px;
-}
-
-*/
-
-/* .sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-}
-
-#about-title, #projects-title, #writings-title, #resume-title{
-    position: relative;
-    font-family: 'Bruno Ace SC', 'cursive';
-    color: white;
-    transform-origin: 0 0;
-    transform: rotate(-30deg);
-    padding-left: 6rem;
-}
-
-#projects-title {
-    margin-left: -1.5rem;
-}
-
-#writings-title {
-    margin: -0.5rem 0 0 1rem;
-}
-
-.intro {
-    position: absolute;
-    top: 20rem;
-    left: 95rem;
-    width: 350px;
-    height: 350px;
-    font-size: 32px;
-}
-
-.intro-name {
-    font-family: 'Bruno Ace SC', 'cursive';
-    cursor: default;
-    color: #95C6FF;
-    cursor: none;
-}
-
-.link-icons {
-    margin: 2rem 1rem 0 0.7rem;
-    height: 2.5rem;
-    border-radius: 25px;
-}
-
-.link-icons:hover {
-    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
-} */
-
-@media(320px <= width <= 480px){
-    .orbital-paths {
-        display: relative;
+@media(1000px <= width){
+    .header {
+        display: flex;
+        justify-content: row;
     }
 
-    .orbital-paths img{
-        height: 5rem;
+    .orbital-paths-planets {
+        position: relative;
+        z-index: 0;
+    }
+
+    .orbital-paths img {
+        width: 60rem
+    }
+
+    .sun, .projects-planet, .writings-planet, .resume-planet {
+        position: absolute;
         width: 5rem;
+    }
+    .sun {
+        top: 4rem;
+    }
+
+    .projects-planet {
+        top: 13.5rem;
+        left: 10rem
+    }
+
+    .writings-planet {
+        top: 25rem;
+        left: 21rem;
+    }
+
+    .resume-planet {
+        top: 10rem;
+        left: 31rem;
+    } 
+
+    .sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all .2s ease-in-out;
+    }
+
+    #about-title, #projects-title, #writings-title, #resume-title{
+        position: relative;
+        font-family: 'Bruno Ace SC', 'cursive';
+        color: white;
+        transform-origin: 0 0;
+        transform: rotate(-30deg);
+        padding-left: 6rem;
+    }
+
+    #projects-title {
+        margin-left: -1.5rem;
+    }
+
+    #writings-title {
+        margin: -0.5rem 0 0 1rem;
+    }
+
+    .intro {
+        position: relative;
+        width: 20rem;
+        left: 75%;
+        top: 20%;
+        z-index: 1;
+    }
+
+    .intro-name {
+        font-family: 'Bruno Ace SC', 'cursive';
+        cursor: default;
+        color: #95C6FF;
+        cursor: none;
+    }
+
+    .link-icons {
+        margin: 2rem 1rem 0 0.7rem;
+        height: 2.5rem;
+        border-radius: 25px;
+    }
+
+    .link-icons:hover {
+        box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
     }
 }

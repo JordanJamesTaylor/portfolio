@@ -55,21 +55,21 @@ export default function App() {
   };
   
   // following cursor animations
-  // const cursor = new MouseFollower({
-  //   container: document.body,
-  //   skewing: 1,
-  //   skewingText: 1,
-  // });
-  // MouseFollower.registerGSAP(gsap);
+  const cursor = new MouseFollower({
+    container: document.body,
+    skewing: 1,
+    skewingText: 1,
+  });
+  MouseFollower.registerGSAP(gsap);
 
   return (
     // switch div to main
     // switch header div to header el
       <main className='App'>
       
-        {/* <header className='header-container'>
+        <header className='header-container'>
           <Header about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
-        </header> */}
+        </header>
 
         <section ref={about} className='about-container'>
           <About />
@@ -83,7 +83,7 @@ export default function App() {
         <section ref={writings} className='writings-container'>
           <h1 className='section-titles'>Writings</h1>
           <BlogsCarousel blogs={blogs} />
-        </section>
+        </section> 
 
         <section ref={resume} className='resume-container'>
           <h1 className='section-titles'>Resume</h1>
@@ -91,9 +91,8 @@ export default function App() {
         </section>
 
         <footer className='contact-container'>
-          <h1 className='section-titles-contact'>Contact</h1>
           <Contact about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
-        </footer>
+        </footer> 
         
       </main>
   );

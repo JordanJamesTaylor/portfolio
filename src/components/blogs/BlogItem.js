@@ -19,14 +19,24 @@ export default function BlogItem({ post }) {
 
     return (
         <div className='blog-card' >
-            <img className='blog-card-img' src={`${post.thumbnail}`} alt='blog title image' />
+            <div className='blog-card-img'>
+                <img src={`${post.thumbnail}`} alt='blog title image' />
+            </div>
             <h2 className='blog-card-title'>
                 {post.title}
             </h2>
             <p className='blog-card-text'>
                 {`${toText(post.description.substr(0, 500))}...`}
             </p>
-            <a  href={`${post.link}`} target='_blank' className='blog-link-btn'><span className='blog-ship-emoji'>&#128640;</span>Read on Medium
+            {/*
+            <a  href={`${post.link}`} target='_blank' className='blog-link-btn'>&#128640;<span className='blog-ship-emoji'></span>Read on Medium
+            </a> 
+            */}
+
+            <a  href={`https://github.com/JordanJamesTaylor/GetItDone`} target='_blank' className='blog-link-btn'>
+                    <span>&#128640;</span>
+                    <span style={{ flex: '1 1 auto'}}></span>
+                    <span>Read on Medium</span>
             </a>
         </div>
     );
