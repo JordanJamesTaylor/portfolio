@@ -27,8 +27,13 @@
         position: absolute;
         width: 5rem;
     }
+
     .sun {
-        top: 4rem;
+        top: 2.5rem;
+    }
+
+    .sun img {
+        width: 8rem;
     }
 
     .projects-planet {
@@ -37,8 +42,8 @@
     }
 
     .writings-planet {
-        top: 25rem;
-        left: 21rem;
+        top: 27rem;
+        left: 18rem;
     }
 
     .resume-planet {
@@ -70,11 +75,8 @@
     }
 
     .intro {
-        position: relative;
+        align-self: center;
         width: 20rem;
-        left: 75%;
-        top: 20%;
-        z-index: 1;
     }
 
     .intro-name {

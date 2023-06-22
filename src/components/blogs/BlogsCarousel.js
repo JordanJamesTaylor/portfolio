@@ -5,7 +5,7 @@ import './blogcarousel.css';
 
 export default function BlogsCarousel({ blogs }) {
 
-    const [activeIndex, setActiveIndex] = useState(3);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const blogCards = blogs.posts.map((post, index) => {
         return(
