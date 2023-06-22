@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+import gsap from "gsap";
 import MouseFollower from "mouse-follower";
 import Header from './components/header/Header';
 import About from './components/about/About';
@@ -7,7 +8,6 @@ import Projects from './components/projects/Projects';
 import BlogsCarousel from './components/blogs/BlogsCarousel';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
-import gsap from "gsap";
 
 import './App.css';
 

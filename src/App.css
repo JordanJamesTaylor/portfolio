@@ -5,6 +5,13 @@
   box-shadow: 0 0 100px 0px rgba(0, 0, 0, 1);
 }
 
+.mf-cursor:before {
+  content: '';
+  position: absolute;
+  background: #ff6a00;
+  border-radius: 50%;
+}
+
 .about-container, .projects-container, .writings-container, .resume-container, .contact-container{
   display: flex;
   flex-direction: column;
