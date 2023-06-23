@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import gsap from "gsap";
 import MouseFollower from "mouse-follower";
+import gsap from "gsap";
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';

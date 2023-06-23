@@ -10,6 +10,7 @@ html {
   background-color: #06072e;
   -webkit-text-size-adjust: 100%;
   cursor: none;
+  caret-color: #ff6a00;
 }
 
 .body {

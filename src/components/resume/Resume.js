@@ -10,7 +10,7 @@ export default function Resume() {
                 <a  href={resume} download='JordanTaylorsResume.pdf'   className='resume-btn'>
                     <span>&#128640;</span>
                     <span style={{ flex: '1 1 auto'}}></span>
-                    <span>Download Resum</span>
+                    <span>Download Resume</span>
                 </a>
                 <p className='resume-intro-text'>
                     Full Stack Developer with experience using frontend and backend technologies such as JavaScript, TypeScript, Node.js, React, Next.js, Ruby on Rails. Former lead Implementation Consultant and General Manager in the hospitality industry, focusing on creative problem-solving and innovation. Leveraged innovation and collaboration to execute complex projects leading to an increase in revenue, customer retention, and efficiency. Passionate about learning new things and staying current with existing technologies.
