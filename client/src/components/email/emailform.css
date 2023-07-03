@@ -1,0 +1,44 @@
+.email-form-lottie{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+        
+    border: solid 2px yellow;
+}
+
+.email-form form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+}
+
+.email-form label {
+    color: #fff;
+}
+
+.email-form textarea {
+    min-height: 10rem;
+    resize: none;
+}
+
+.email-lottie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: solid 2px red;
+}
+
+.email-lottie h1 {
+    color: white;
+}

@@ -1,0 +1,81 @@
+@media(0px <= width <= 999px){   
+    .contact-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0.5rem;
+    } 
+
+    .contact-logo img {
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    .contact-stamps {
+        margin-bottom: 0.5rem;
+        font-family: 'Comfortaa';
+        font-size: 20px;
+        color: #95C6FF;
+    }
+
+    .contact-link-icons img {
+        height: 2rem;
+        width: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .contact-planets {
+        display: none;
+    }
+
+    .lottie-img {
+        display: none;
+    }
+}
+
+/***************************************************/
+/***************************************************/
+/***************************************************/
+
+@media(1000px <= width){
+    .contact-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+      
+    .contact-logo {
+        padding-left: 1rem;
+    }
+    
+    .contact-stamps {
+        font-family: 'Comfortaa';
+        font-size: 20px;
+        color: #95C6FF;
+    }
+    
+    .contact-planets {
+        width: 400px;
+    }  
+    
+    .contact-icons-planets {
+        height: 6rem;
+        width: 6rem;
+        cursor: pointer;
+    }
+    
+    .email-icons-lottie {
+        display: flex;
+        flex-direction: column;
+        padding-right: 1rem;
+    }
+
+    .contact-link-icons img {
+        margin: 1rem 1rem 0 0;
+    }
+    
+    .lottie-img {
+        padding-right: 1rem;
+    }
+}

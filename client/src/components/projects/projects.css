@@ -1,0 +1,92 @@
+.project-link-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  width: 91%;
+  border-radius: 15px;
+  color: #fff;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Comfortaa';
+  background-image: linear-gradient(to right, #0D1980, #0B0F47);
+}
+
+.project-card-a, .project-card-b, .project-card-c{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 25PX;
+  background-color: #fff;
+}
+
+.project-card-img {
+  width: 95%;
+  border-radius: 25PX;
+}
+
+.project-card-title {
+  align-self: start;
+  margin: 1rem 0 1rem 1rem;
+  font-family: 'Bruno Ace SC';
+  color: #012754;
+}
+
+.project-card-text {
+  color: #95C6FF;
+  margin: 0rem 1rem 1rem 1rem;
+  line-height: 1.4rem;
+}
+
+@media(0px <= width <= 999px){
+  .project-cards-container{
+    flex-direction: column;
+  }
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+@media(1000px <= width){
+  .project-cards-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 110%;
+  }
+
+  .project-card-a, .project-card-b, .project-card-c{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0 0.3rem 2rem 0.3rem;
+    border-radius: 25PX;
+  }
+
+  .project-card-a:hover, .project-card-b:hover, .project-card-c:hover {
+    border: solid #fff 2px;
+    background: none;
+  }
+
+  .project-card-a:hover p, .project-card-b:hover p, .project-card-c:hover p{
+    color: #fff;
+  }
+
+  .project-card-a:hover h2, .project-card-b:hover h2, .project-card-c:hover h2{
+    color: #fff;
+  }
+
+  .project-link-btn:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: scale(1.03);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
+  }
+}

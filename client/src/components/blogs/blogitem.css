@@ -1,0 +1,94 @@
+.blog-link-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Comfortaa';
+    background-image: linear-gradient(to right, #0D1980, #0B0F47);
+  }
+
+@media(0px <= width <= 999px){
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0  1rem  1rem 1rem;
+        text-align: start;
+        border: solid white 1px;
+        border-radius: 25px;
+        background-color: #fff;
+        transition: all .2s ease-in-out;
+    }
+
+    .blog-card-img {
+        position: relative; 
+        display: inline-block;
+        border-radius: 25px;
+        opacity: 0.3;
+    }
+    
+    .blog-card-img img{
+        width: 90%;
+        display: block;
+    }
+
+    .blog-card-title {
+        margin-bottom: 1rem;
+        font-family: 'Bruno Ace SC';
+        font-size: 1.5rem; 
+        color: #012754;
+        z-index: 1;
+    }
+
+    .blog-card-text {
+        color: #000;
+        line-height: 1.4rem;
+        padding-bottom: 1rem;
+        z-index: 2;
+    }
+}
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+
+@media(1000px <= width){
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        height: 33rem;
+        max-width: 60rem;
+        margin: 0 1rem 0 1rem;
+        padding: 0.5rem 1rem 1rem 1rem;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+
+    .blog-card-img img {
+        position: relative;
+        width: 90%;
+        height: 15rem;
+        max-width: 30rem;
+        max-height: 20rem;
+        border-radius: 25px;
+        z-index: 0;
+    }
+
+    .blog-card-title {
+        height: 3rem;
+        margin-bottom: 1rem;
+        font-family: 'Bruno Ace SC';
+        font-size: 1.5rem; 
+        color: #012754;
+        z-index: 1;
+    }
+
+    .blog-card-text {
+        height: 8rem;
+    }
+}

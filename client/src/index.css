@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: #06072e;
+  -webkit-text-size-adjust: 100%;
+  cursor: none;
+  caret-color: #ff6a00;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.body {
+  display: flex;
+}
+
+.body::-webkit-scrollbar { 
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#root {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: left;
+  font-family: 'Comfortaa';
+  font-size: 20px;
+  color: #95C6FF;
+} 
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  cursor: none;
+}
