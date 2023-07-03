@@ -16,7 +16,7 @@ export default function EmailForm() {
       }else{
         console.log('FULL');
 
-        emailjs.sendForm('service_6pd41j4', 'template_eptp2za', form.current, 'hsguqEZukZHTsuUl6')
+        emailjs.sendForm()
         .then((result) => {
             e.target.reset();
         }, (error) => {
