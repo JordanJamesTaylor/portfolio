@@ -20,7 +20,7 @@ export default function EmailForm() {
 
         // add notification
 
-        emailjs.sendForm('service_6pd41j4', 'template_eptp2za', form.current, 'hsguqEZukZHTsuUl6')
+        emailjs.sendForm()
         .then((result) => {
             e.target.reset();
         }, (error) => {
