@@ -8,7 +8,7 @@ import Projects from './components/projects/Projects';
 import BlogsCarousel from './components/blogs/BlogsCarousel';
 import Resume from './components/resume/Resume';
 import EmailForm from './components/email/EmailForm';
-import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 import './App.css';
 
@@ -18,9 +18,9 @@ export default function App() {
       posts: [],
       isLoading: true,
       error: null
-  });
+    });
 
-  const getBlogPosts = async () => {
+    const getBlogPosts = async () => {
     try{
       const res = axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jordjamestaylor')
       const blogPosts = await res;
@@ -30,8 +30,8 @@ export default function App() {
       setBlogs({posts: blogs, isLoading: false});
       
     }catch(err){
-      console.log({ error: err.message })
-    }
+      console.log({ error: err.message });
+    };
   };
 
   useEffect(() => {
@@ -60,8 +60,6 @@ export default function App() {
   MouseFollower.registerGSAP(gsap);
 
   return (
-    // switch div to main
-    // switch header div to header el
       <main className='App'>
         <header className='header-container'>
           <Header about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
@@ -81,12 +79,13 @@ export default function App() {
           <h1 className='section-titles'>Resume</h1>
           <Resume />
         </section>
-        <section className='email-form-container'>
+        {/* <section className='email-form-container'>
           <EmailForm />
-        </section>
-        <footer className='contact-container'>
-          <Contact about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
+        </section> */}
+        <footer className='footer-container'>
+          <Footer about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
         </footer>
       </main>
   );
+
 };

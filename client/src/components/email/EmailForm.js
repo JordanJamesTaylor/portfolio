@@ -12,14 +12,21 @@ export default function EmailForm() {
       e.preventDefault();
 
       if(document.getElementById("email-text").value == ''){
+
+        // add error notification
+
         console.log('EMPTY');
       }else{
-        console.log('FULL');
 
-        emailjs.sendForm()
+        // add notification
+
+        emailjs.sendForm('service_6pd41j4', 'template_eptp2za', form.current, 'hsguqEZukZHTsuUl6')
         .then((result) => {
             e.target.reset();
         }, (error) => {
+
+            // add error notification
+
             console.log(error.text);
         });
       };
@@ -42,7 +49,11 @@ export default function EmailForm() {
                 <input type="email" name="user_email" />
                 <label>Message</label>
                 <textarea id='email-text' name="message" />
-                <input type="submit" value="Send" />
+                <button className='form-btn' type="submit" value="Send">
+                  <span>&#128640;</span>
+                  <span style={{ flex: '1 1 auto'}}></span>
+                  <span>Send Email</span>
+                </button>
             </form>
         </div>
         <div className='email-lottie'>

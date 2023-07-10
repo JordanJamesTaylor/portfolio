@@ -2,7 +2,7 @@ import React from 'react';
 
 import './blogitem.css';
 
-export default function BlogItem({ post, index }) {
+export default function BlogItem({ index, post }) {
     // remove html
     function toText(node) {
         let tag = document.createElement("div");
@@ -10,10 +10,10 @@ export default function BlogItem({ post, index }) {
         node = tag.innerText;
         
         return node;
-    }
+    };
 
     return (
-        <div key={index} className='blog-card' >
+        <div id={index} className='blog-card' >
             <div className='blog-card-img'>
                 <img src={`${post.thumbnail}`} alt='blog title image' />
             </div>

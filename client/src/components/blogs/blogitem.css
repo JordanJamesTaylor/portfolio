@@ -10,7 +10,7 @@
     font-weight: 900;
     font-family: 'Comfortaa';
     background-image: linear-gradient(to right, #0D1980, #0B0F47);
-  }
+}
 
 @media(0px <= width <= 999px){
     .blog-card {
@@ -90,5 +90,6 @@
 
     .blog-card-text {
         height: 8rem;
+        color: #000;
     }
 }

@@ -2,7 +2,15 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const KeySchema = new Schema({
-    key: {
+    serviceId: {
+        type: String,
+        required: true
+    },
+    templateId: {
+        type: String,
+        required: true
+    },
+    publicKey: {
         type: String,
         required: true
     }

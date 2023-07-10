@@ -21,13 +21,44 @@
     padding: 1rem;
 }
 
+.email-form input {
+    height: 2rem;
+    border-radius: 25px;
+}
+
 .email-form label {
+    margin: 0.5rem 0 0.5rem 0;
     color: #fff;
+    font-family: 'Bruno Ace SC';
+    font-size: 1.5rem;
 }
 
 .email-form textarea {
+    background-color: none;
     min-height: 10rem;
+    border-radius: 25px;
     resize: none;
+}
+
+.form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Comfortaa';
+    background-image: linear-gradient(to right, #0D1980, #0B0F47);
+}
+
+.form-btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
 }
 
 .email-lottie {

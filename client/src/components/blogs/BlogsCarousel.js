@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import BlogItem from './BlogItem';
 
 import './blogcarousel.css';
@@ -8,8 +8,10 @@ export default function BlogsCarousel({ blogs }) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const blogCards = blogs.posts.map((post, index) => {
-        return(    
-            <BlogItem index={index} post={post} />
+        return(
+            <Fragment key={index}>
+                <BlogItem index={index} post={post} />
+            </Fragment>
         );
     });
     
@@ -24,7 +26,9 @@ export default function BlogsCarousel({ blogs }) {
     };
 
     const handleJump = (id) => {
-        console.log('HANDLE JUMP --> ', id);
+
+        console.log('ID: ', id);
+
         setActiveIndex(id);
     };
 
@@ -45,14 +49,15 @@ export default function BlogsCarousel({ blogs }) {
             </div>
             <div className='carousel-btns-container'>
             <div className='indicators'>
-                {blogCards.map((index) => {
-
-                    console.log('HERE --> ', index.props.index);
-
+                {blogCards.map((index) => {   
+                    
+                    console.log('ACTIVE INDEX: ', activeIndex);
+                    console.log('BUTTON INDEX: ', index.key);
+                    console.log(activeIndex == index.key);
 
                     return(
-                        <button onClick={(e) => handleJump(index.props.index)} className={`${index===activeIndex ? 'indicator-btns-active' : 'indicator-btns'}`}>
-                            <span id={index} className='material-symbols-outlined'>
+                        <button key={index.key} onClick={(e) => handleJump(index.key)} className={`${index.key == activeIndex ? 'indicator-btns-active' : 'indicator-btns'}`}>
+                            <span id={index.key} className='material-symbols-outlined'>
                                 radio_button_checked
                             </span>
                         </button>

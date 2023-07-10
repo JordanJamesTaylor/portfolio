@@ -29,7 +29,7 @@ li {
         font-weight: 900;
         font-family: 'Comfortaa';
         text-align: start;
-        background-image: linear-gradient(to right, #0D1980, #0B0F47);
+        background-image: linear-gradient(to right, #7388ff, #2450ff);
     }
 
     .project-ship-emoji {
@@ -99,7 +99,7 @@ li {
         font-size: 1.5rem;
         font-weight: 900;
         font-family: 'Comfortaa';
-        background-image: linear-gradient(to right, #0D1980, #0B0F47);
+        background-image: linear-gradient(to right, #7388ff, #2450ff);
     }
     
     .resume-ship-emoji {

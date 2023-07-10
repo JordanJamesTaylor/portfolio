@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0.3rem 1rem 0.3rem 0.5rem;
-  width: 91%;
+  width: 88%;
   border-radius: 15px;
   color: #fff;
   line-height: 3rem;
@@ -37,7 +37,7 @@
 }
 
 .project-card-text {
-  color: #95C6FF;
+  color: #000;
   margin: 0rem 1rem 1rem 1rem;
   line-height: 1.4rem;
 }
@@ -72,6 +72,7 @@
   .project-card-a:hover, .project-card-b:hover, .project-card-c:hover {
     border: solid #fff 2px;
     background: none;
+    transform: scale(1.03);
   }
 
   .project-card-a:hover p, .project-card-b:hover p, .project-card-c:hover p{

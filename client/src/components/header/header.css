@@ -21,6 +21,10 @@
     width: 16rem;
 }
 
+.sun h1 {
+    padding-left: 10rem;
+}
+
 .projects-planet {
     top: 19.5rem;
     left: 10rem
@@ -29,6 +33,10 @@
 .projects-planet img {
     width: 10rem;
 } 
+
+.projects-planet h1 {
+    padding-left: 8rem;
+}
 
 .resume-planet {
     top: 13rem;
@@ -39,6 +47,10 @@
     width: 10rem;
 } 
 
+.resume-planet h1 {
+    padding-left: 6.5rem;
+} 
+
 .writings-planet {
     top: 39rem;
     left: 25rem;
@@ -47,6 +59,10 @@
 .writings-planet img {
     width: 15rem;
 }
+
+.writings-planet h1 {
+    padding-left: 9rem;
+} 
 
 .sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
     cursor: pointer;
@@ -60,7 +76,7 @@
     color: white;
     transform-origin: 0 0;
     transform: rotate(-30deg);
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
 }
 
 #projects-title {
