@@ -38,7 +38,7 @@ Implementation and customisation of the Cuberto Mouse Follower JS package
 Brief intro
 Links to my LinkedIn and Github profiles
 
-   ![Screenshot of the header section](./client/src/assests/screenshots/Header-SC.png) 
+   ![Screenshot of the header section](./client/src/assests/screenshots/Header.png) 
 
    Display profile image when hovering over my name using Mouse Follower
    
@@ -81,6 +81,9 @@ Secondary planetary navbar
 Secondary option to send email by clicking on my name in the lower right corner
 
 ![Screenshot of the footer section](./client/src/assests/screenshots/Footer.png)
+
+Display the section titles show where each planet navigates to
+
 ![Screenshot of footer section with mouse follower displaying navbar text](./client/src/assests/screenshots/Footer-Planet.png)
 
 ## Contact
