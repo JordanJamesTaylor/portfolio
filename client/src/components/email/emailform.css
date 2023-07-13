@@ -1,17 +1,56 @@
-.email-form-lottie{
+@media(0px <= width <= 999px) {
+    .email-form-header h1:after {
+        content: 'Message Me!';
+    }
+}
+
+@media(width <= 573px) {
+    .email-btn-text:before {
+        content: 'Shoot!';
+    }
+}
+
+@media(574px <= width) {
+    .email-btn-text:before {
+        content: 'Send Email!';
+    }
+}
+
+@media(1000px <= width) {
+    .email-form-header h1:after {
+        content: 'Send Me a Message!';
+    }
+}
+
+.email-form-lottie {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+}
+
+.email-form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin-bottom: 3rem;
+    color: #95C6FF;
+    font-family: 'Bruno Ace SC', 'cursive';
+}
+
+.email-form-header h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    cursor: none;
 }
 
 .email-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex: 2;
-        
-    border: solid 2px yellow;
+    width: 100%;
 }
 
 .email-form form {
@@ -21,30 +60,67 @@
     padding: 1rem;
 }
 
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .email-form input {
-    height: 2rem;
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.3rem;
+    font-family: 'Comfortaa';
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    background-color: #181A5D;
+}
+
+.form-top input:focus {
+    padding: 1rem;
     border-radius: 25px;
+    font-family: 'Comfortaa';
+    color: #000;
+    background-color: #fff;
 }
 
 .email-form label {
-    margin: 0.5rem 0 0.5rem 0;
-    color: #fff;
+    margin: 1rem 0 0.5rem 0;
+    color: #95C6FF;
     font-family: 'Bruno Ace SC';
     font-size: 1.5rem;
+    cursor: none;
 }
 
 .email-form textarea {
-    background-color: none;
+    padding-top: 1rem;
+    font-size: 1.3rem;
     min-height: 10rem;
-    border-radius: 25px;
+    background-color: #181A5D;
     resize: none;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.email-form textarea:focus {
+    padding: 1rem;
+    border-radius: 25px;
+    font-family: 'Comfortaa';
+    color: #000;
+    background-color: #fff;
 }
 
 .form-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 1rem;
+    width: 60%;
+    align-self: center;
+    margin-top: 2rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 15px;
     color: #fff;
@@ -52,7 +128,7 @@
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Comfortaa';
-    background-image: linear-gradient(to right, #0D1980, #0B0F47);
+    background-image: linear-gradient(to right, #7388ff, #2450ff);
 }
 
 .form-btn:hover {
@@ -66,10 +142,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    border: solid 2px red;
-}
-
-.email-lottie h1 {
-    color: white;
+    height: 200px;
+    width: 200px;
 }

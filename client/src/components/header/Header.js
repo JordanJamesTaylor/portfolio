@@ -2,7 +2,7 @@ import React from 'react';
 
 import './header.css';
 
-export default function Header({ about, projects, writings, resume, scrollToSection }) {
+export default function Header({ about, projects, writings, resume, contact, scrollToSection }) {
     // put orbits and intro in two sep boxes and header as an outer box
     return (
         <div className='header'>
@@ -20,6 +20,12 @@ export default function Header({ about, projects, writings, resume, scrollToSect
                     <img className='resume-planet-img' src={require('../../assests/green-blue-planet.png')} onClick={() => scrollToSection(resume)}/>
                     <h1 id='resume-title'>
                         RESUME
+                    </h1>
+                </div> 
+                <div className='contact-planet'>
+                    <img className='contact-planet-img' src={require('../../assests/contact-planet.png')} onClick={() => scrollToSection(contact)}/>
+                    <h1 id='contact-title'>
+                        CONTACT
                     </h1>
                 </div> 
                 <div className='projects-planet'>
