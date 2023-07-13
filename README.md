@@ -38,22 +38,22 @@ Implementation and customisation of the Cuberto Mouse Follower JS package
 Brief intro
 Links to my LinkedIn and Github profiles
 
-![Screenshot of the header section](./src/assests/screenshots/Header.png) 
-![Screenshot of the header section with mouse follower showing profile image](./src/assests/screenshots/Header-Head.png)
+![Screenshot of the header section](./client/src/assests/screenshots/Header.png) 
+![Screenshot of the header section with mouse follower showing profile image](./client/src/assests/screenshots/Header-Head.png)
 
 ### Introduction
 Implementation and customisation of an React typewriter package
 Further customisation of the Mouse Follower package
 A personal introduction. 
 
-![Screenshot of introduction section](./src/assests/screenshots/Introduction.png)
+![Screenshot of introduction section](./client/src/assests/screenshots/Introduction.png)
 
 ### Porjects
 Responsive design and animation
 Further customisation of the Mouse Follower package
 Descriptions and links to other projects
 
-![Screenshot of projects section](./src/assests/screenshots/Projects.png)
+![Screenshot of projects section](./client/src/assests/screenshots/Projects.png)
 
 ### Medium Blog Posts
 Carousel using pure HTML and CSS
@@ -64,15 +64,15 @@ API call fetches the following data from Meduim:
 * Image 
 * links
 
-![Screenshot of the blog carousel](./src/assests/screenshots/Writings.png)
+![Screenshot of the blog carousel](./client/src/assests/screenshots/Writings.png)
 
 ### Footer
 Implementation and customisation of an React Lottie package
 Links to my LinkedIn and Github
 Secondary planetary navbar 
 
-![Screenshot of the footer section](./src/assests/screenshots/Footer.png)
-![Screenshot of footer section with mouse follower displaying navbar text](./src/assests/screenshots/Footer-Planet.png)
+![Screenshot of the footer section](./client/src/assests/screenshots/Footer.png)
+![Screenshot of footer section with mouse follower displaying navbar text](./client/src/assests/screenshots/Footer-Planet.png)
 
 ## Contact
 
