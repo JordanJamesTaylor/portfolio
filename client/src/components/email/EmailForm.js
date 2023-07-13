@@ -40,7 +40,7 @@ export default function EmailForm() {
     } else if(document.getElementById("email-text").value == '') {
       createNotification('empty-message');
     } else {      
-      emailjs.sendForm()
+      emailjs.sendForm('service_6pd41j4', 'template_eptp2za', form.current, 'hsguqEZukZHTsuUl6')
       .then((result) => {
         createNotification('success');
         e.target.reset();
