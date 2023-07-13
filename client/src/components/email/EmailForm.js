@@ -45,7 +45,7 @@ export default function EmailForm() {
         createNotification('success');
         e.target.reset();
       }, (error) => {
-        console.log({ message: error.message });
+        console.log('HERE --->', { message: error });
         createNotification('error');
       });
     };
