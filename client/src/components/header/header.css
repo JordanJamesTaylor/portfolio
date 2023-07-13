@@ -7,7 +7,7 @@
     width: 60rem;
 }
 
-.sun, .projects-planet, .writings-planet, .resume-planet {
+.sun, .projects-planet, .writings-planet, .resume-planet, .contact-planet {
     position: absolute;
     width: 5rem;
 }
@@ -27,7 +27,7 @@
 
 .projects-planet {
     top: 19.5rem;
-    left: 10rem
+    left: 9rem
 }
 
 .projects-planet img {
@@ -39,9 +39,18 @@
 }
 
 .resume-planet {
-    top: 13rem;
-    left: 43rem;
+    top: 21rem;
+    left: 32rem;
 } 
+
+.contact-planet {
+    top: 38rem;
+    left: 34rem;
+}
+
+.contact-planet h1 {
+    padding-left: 5.5rem;
+}
 
 .resume-planet img {
     width: 10rem;
@@ -52,8 +61,8 @@
 } 
 
 .writings-planet {
-    top: 39rem;
-    left: 25rem;
+    top: 4rem;
+    left: 50rem;
 }
 
 .writings-planet img {
@@ -64,13 +73,13 @@
     padding-left: 9rem;
 } 
 
-.sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .link-icons:hover{
+.sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .contact-planet-img:hover, .link-icons:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: all .2s ease-in-out;
 }
 
-#about-title, #projects-title, #writings-title, #resume-title{
+#about-title, #projects-title, #writings-title, #resume-title, #contact-title {
     position: relative;
     font-family: 'Bruno Ace SC', 'cursive';
     color: white;
@@ -110,9 +119,31 @@
     box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
 }
 
-@media(0px <= width <= 899px){
+@media(0px <= width <= 952px){
     .header{
         display: none;
+    }
+}
+
+@media(0px <= width <= 1135px){
+    .writings-planet {
+        top: 4rem;
+        left: 23rem;
+    }
+}
+
+
+@media(953px <= width <= 1280px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .intro {
+        padding: 3rem;
+        margin: 0;
+        align-self: center;
     }
 }
 

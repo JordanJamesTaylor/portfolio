@@ -1,6 +1,6 @@
 .resume-titles, .resume-sub-titles {
-    font-family: 'Bruno Ace SC';
     margin: 0.5rem 0 0.5rem;
+    font-family: 'Bruno Ace SC', 'cursive';
 }
 
 ul {
@@ -41,7 +41,7 @@ li {
     }
 
     .resume-intro-text {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
     
     .skill-icons {
@@ -57,9 +57,9 @@ li {
     }
     
     .resume-section-titles {
+        font-family: 'Bruno Ace SC', 'cursive';
         margin: 0.5rem 0 0.5rem;
         color: #F4F9FF;
-        font-family: 'Bruno Ace SC', 'cursive';
         font-size: 3rem;
         cursor: default;
         margin: 2.5rem 0 1rem 0;
@@ -129,6 +129,7 @@ li {
     }
     
     .resume-section-titles {
+        font-family: 'Bruno Ace SC', 'cursive';
         color: #F4F9FF;
         font-size: 3rem;
         cursor: default;

@@ -19,7 +19,7 @@ export default function Footer({ about, projects, writings, resume, scrollToSect
 
             <div className='footer-logo'>
                  <img style={{ paddingBottom: '1rem' }}src={require('../../assests/site-logo.png')}/>
-                 <h3 className='footer-stamps'>@ 2023 Jordan Taylor</h3>
+                 <h5 className='footer-stamps'>@2023 Jordan</h5>
             </div>
 
             <div className="footer-planets">

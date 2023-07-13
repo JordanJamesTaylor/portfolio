@@ -49,12 +49,7 @@ export default function BlogsCarousel({ blogs }) {
             </div>
             <div className='carousel-btns-container'>
             <div className='indicators'>
-                {blogCards.map((index) => {   
-                    
-                    console.log('ACTIVE INDEX: ', activeIndex);
-                    console.log('BUTTON INDEX: ', index.key);
-                    console.log(activeIndex == index.key);
-
+                {blogCards.map((index) => {
                     return(
                         <button key={index.key} onClick={(e) => handleJump(index.key)} className={`${index.key == activeIndex ? 'indicator-btns-active' : 'indicator-btns'}`}>
                             <span id={index.key} className='material-symbols-outlined'>
