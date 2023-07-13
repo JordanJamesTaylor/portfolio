@@ -69,10 +69,16 @@ API call fetches the following data from Meduim:
 
 ![Screenshot of the blog carousel](./client/src/assests/screenshots/Writings.png)
 
-### Footer
+### Email Form
 Implementation and customisation of an React Lottie package
+User is able to send me an email directly through the site
+
+![Screenshot of the blog carousel](./client/src/assests/screenshots/email-form.png)
+
+### Footer
 Links to my LinkedIn and Github
 Secondary planetary navbar 
+Secondary option to send email by clicking on my name in the lower right corner
 
 ![Screenshot of the footer section](./client/src/assests/screenshots/Footer.png)
 ![Screenshot of footer section with mouse follower displaying navbar text](./client/src/assests/screenshots/Footer-Planet.png)
