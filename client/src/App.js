@@ -40,12 +40,14 @@ export default function App() {
   useEffect(() => {
     console.log("       !\r\n       ^\r\n      \/ \\\r\n     \/___\\\r\n    |=   =|\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n   \/|##!##|\\\r\n  \/ |##!##| \\\r\n \/  |##!##|  \\\r\n|  \/ ^ | ^ \\  |\r\n| \/  ( | )  \\ |\r\n|\/   ( | )   \\|\r\n    ((   ))\r\n   ((  :  ))\r\n   ((  :  ))\r\n    ((   ))\r\n     (( ))\r\n      ( )\r\n       .\r\n       .\r\n       .\n\nHello there! 👋\n\nI hope you like my website.\n\nIf you're interested in seeing how the sausage is made feel free to checkout my GitHube repo:\nhttps://github.com/JordanJamesTaylor/portfolio\n\nYou can reach me at jordjamestaylor@gmail.com\n\nHope to hear from you soon!");
   }, []);
+
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
   const writings = useRef(null);
   const resume = useRef(null);
   const contact = useRef(null);
+
   // grab window element and scroll to component
   const scrollToSection = (elementRef) => {    
     window.scrollTo({
@@ -55,6 +57,7 @@ export default function App() {
       },
     );
   };
+
   // following cursor animations
   const cursor = new MouseFollower({
     container: document.body,
