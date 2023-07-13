@@ -26,6 +26,7 @@
 
 .project-card-img {
   width: 95%;
+  max-height: 16rem;
   border-radius: 25PX;
 }
 
