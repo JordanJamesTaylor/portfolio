@@ -13,7 +13,7 @@ This was a website built to showcase my design and technical skills with HTML, C
 
 ## Overview
 
- [Link to site] - (https://main--jordan-taylor-portfolio.netlify.app/)
+ [Link to site](https://main--jordan-taylor-portfolio.netlify.app/)
 
  I built this project as hub to display my projects and technical skillsets. My main focus during development was to expand my knowledge of CSS and to better understand its strengths and weaknesses (media queries, flexbox, accessibility practices).
 
