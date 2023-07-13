@@ -38,7 +38,10 @@ Implementation and customisation of the Cuberto Mouse Follower JS package
 Brief intro
 Links to my LinkedIn and Github profiles
 
-![Screenshot of the header section](./client/src/assests/screenshots/Header-SC.png) 
+   ![Screenshot of the header section](./client/src/assests/screenshots/Header-SC.png) 
+
+   Display profile image when hovering over my name using Mouse Follower
+   
 ![Screenshot of the header section with mouse follower showing profile image](./client/src/assests/screenshots/Header-Head.png)
 
 ### Introduction
