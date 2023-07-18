@@ -40,7 +40,7 @@ export default function EmailForm() {
     } else if(document.getElementById("email-text").value == '') {
       createNotification('empty-message');
     } else {      
-      emailjs.sendForm()
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
         createNotification('success');
         e.target.reset();

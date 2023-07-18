@@ -41,6 +41,9 @@ export default function App() {
     console.log("       !\r\n       ^\r\n      \/ \\\r\n     \/___\\\r\n    |=   =|\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n    |     |\r\n   \/|##!##|\\\r\n  \/ |##!##| \\\r\n \/  |##!##|  \\\r\n|  \/ ^ | ^ \\  |\r\n| \/  ( | )  \\ |\r\n|\/   ( | )   \\|\r\n    ((   ))\r\n   ((  :  ))\r\n   ((  :  ))\r\n    ((   ))\r\n     (( ))\r\n      ( )\r\n       .\r\n       .\r\n       .\n\nHello there! 👋\n\nI hope you like my website.\n\nIf you're interested in seeing how the sausage is made feel free to checkout my GitHube repo:\nhttps://github.com/JordanJamesTaylor/portfolio\n\nYou can reach me at jordjamestaylor@gmail.com\n\nHope to hear from you soon!");
   }, []);
 
+  console.log('------------------- env ---------------------');
+  console.log(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, process.env.REACT_APP_PUBLIC_KEY);
+
   // init useRef hook for each section
   const about = useRef(null);
   const projects = useRef(null);
