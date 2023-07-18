@@ -120,7 +120,7 @@
 }
 
 @media(0px <= width <= 952px){
-    .header{
+    .site-header {
         display: none;
     }
 }
@@ -132,9 +132,8 @@
     }
 }
 
-
 @media(953px <= width <= 1280px){
-    .header {
+    .site-header {
         display: flex;
         flex-direction: column;
         margin-bottom: 5rem;
@@ -148,8 +147,21 @@
 }
 
 @media(1200px <= width){
-    .header {
+    .site-header {
         display: flex;
         margin-bottom: 5rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

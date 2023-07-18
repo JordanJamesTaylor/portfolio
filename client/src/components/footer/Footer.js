@@ -1,5 +1,4 @@
 import React from 'react';
-// import Lottie from 'react-lottie';
 import astronaut from '../../assests/astronaut.json'
 
 import './footer.css'
@@ -32,22 +31,15 @@ export default function Footer({ about, projects, writings, resume, scrollToSect
             <div className="email-icons-lottie">
                 <div className='email'>
                     <a href="mailto: jordjamestaylor@gmail.com"  className='footer-stamps'>Jordan Taylor</a>    
-                <div className='footer-link-icons'>
-                    <a href='https://github.com/JordanJamesTaylor' target='_blank'>
-                        <img src={require('../../assests/github-icon.png')} />
-                    </a>
-                    <a href='https://www.linkedin.com/in/jordan-taylor-903471242/' target='_blank'>
-                        <img src={require('../../assests/linkedin-icon.png')} />
-                    </a>
-                </div>
-                </div>
-                <div className='lottie-img'>
-                    {/* <Lottie
-                        options={defaultOptions}
-                        height={150}
-                        width={150}
-                    /> */}
-                </div>      
+                    <div className='footer-link-icons'>
+                        <a href='https://github.com/JordanJamesTaylor' target='_blank'>
+                            <img src={require('../../assests/github-icon.png')} />
+                        </a>
+                        <a href='https://www.linkedin.com/in/jordan-taylor-903471242/' target='_blank'>
+                            <img src={require('../../assests/linkedin-icon.png')} />
+                        </a>
+                    </div>
+                </div>    
             </div>
         </div>
     )

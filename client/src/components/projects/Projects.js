@@ -6,7 +6,7 @@ import "./projects.css";
 export default function Projects() {
 
   return(
-    <div className='project-cards-container'>
+    <article className='project-cards-container'>
 
     <div className='project-card-a'>
       <img className='project-card-img' src={`${spaceBackground}`} alt='blog title image'data-cursor-text='Track Bugs!' />
@@ -48,6 +48,6 @@ export default function Projects() {
       </a>
     </div>
 
-    </div>
+    </article>
   );
 };

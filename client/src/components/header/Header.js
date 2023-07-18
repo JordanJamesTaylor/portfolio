@@ -1,11 +1,10 @@
 import React from 'react';
-
 import './header.css';
 
 export default function Header({ about, projects, writings, resume, contact, scrollToSection }) {
     // put orbits and intro in two sep boxes and header as an outer box
     return (
-        <div className='header'>
+        <div className='site-header'>
             <div className='orbital-paths-planets'>
                 <div className='orbital-paths'>
                     <img src={require('../../assests/orbital-lines2.png')} alt='cartoon solar system background' />
@@ -41,7 +40,7 @@ export default function Header({ about, projects, writings, resume, contact, scr
                     </h1>
                 </div>
             </div>
-            <div className='intro'>
+            <aside className='intro'>
                 <h2 className='intro-name' data-cursor-img={require("../../assests/resume-photo.png")}>I'm Jordan</h2>
                 <br />
                 <p>
@@ -53,8 +52,8 @@ export default function Header({ about, projects, writings, resume, contact, scr
                 <a href='https://www.linkedin.com/in/jordan-taylor-903471242/' target='_blank'>
                     <img className='link-icons' src={require('../../assests/linkedin-icon.png')} />
                 </a>
-            </div>
+            </aside>
         </div>
     );
 };
-
+  

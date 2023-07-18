@@ -6,7 +6,7 @@ import './resume.css';
 export default function Resume() {
     return(
         <div className='resume'>
-            <div className='resume-intro'>
+            <aside className='resume-intro'>
                 <a  href={resume} download='JordanTaylorsResume.pdf'   className='resume-btn'>
                     <span>&#128640;</span>
                     <span style={{ flex: '1 1 auto'}}></span>
@@ -16,7 +16,7 @@ export default function Resume() {
                     Full Stack Developer with experience using frontend and backend technologies such as JavaScript, TypeScript, Node.js, React, Next.js, Ruby on Rails. Former lead Implementation Consultant and General Manager in the hospitality industry, focusing on creative problem-solving and innovation. Leveraged innovation and collaboration to execute complex projects leading to an increase in revenue, customer retention, and efficiency. Passionate about learning new things and staying current with existing technologies.
                 </p>
                 <img className='skill-icons' src={require('../../assests/skills-icons.png')} alt='logos of tools' />
-            </div>
+            </aside>
             <div className='resume-scroll'>
 
                 <h1 className='resume-section-titles'>Technical Projects</h1>
