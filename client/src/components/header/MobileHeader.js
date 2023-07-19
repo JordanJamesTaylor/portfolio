@@ -14,7 +14,10 @@ export default function({ about, projects, writings, resume, contact, scrollToSe
 
     return(
         <nav className='mobile-header'>
-            <img className='mobile-site-logo' src={require('../../assests/site-logo.png')} />
+            <div className='mobile-logo-title-container'>
+                <img className='mobile-view-logo' src={require('../../assests/site-logo.png')} />
+                <h1 className='mobile-view-title'>Jordan Taylor</h1>
+            </div>
             <div onClick={() => toggle()} className='mobile-toggle-btn'>
                 <span className='bars'></span>
                 <span className='bars'></span>

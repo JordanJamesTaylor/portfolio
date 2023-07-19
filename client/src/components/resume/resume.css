@@ -56,6 +56,16 @@ li {
         padding:10px;
     }
     
+    .resume-scroll::-webkit-scrollbar {
+        width: 0.2rem;
+        display: block;
+    }
+     
+    .resume-scroll::-webkit-scrollbar-thumb {
+        background: #fff; 
+        border-radius: 10px;
+    }
+
     .resume-section-titles {
         font-family: 'Bruno Ace SC', 'cursive';
         margin: 0.5rem 0 0.5rem;
