@@ -13,7 +13,7 @@ This was a website built to showcase my design and technical skills with HTML, C
 
 ## Overview
 
- [Link to site] - (https://main--jordan-taylor-portfolio.netlify.app/)
+ [Link to site](https://main--jordan-taylor-portfolio.netlify.app/)
 
  I built this project as hub to display my projects and technical skillsets. My main focus during development was to expand my knowledge of CSS and to better understand its strengths and weaknesses (media queries, flexbox, accessibility practices).
 
@@ -39,22 +39,25 @@ Use of useState, useEffect, and useToggle React hooks
 Brief intro
 Links to my LinkedIn and Github profiles
 
-![Screenshot of the header section](./src/assests/screenshots/Header.png) 
-![Screenshot of the header section with mouse follower showing profile image](./src/assests/screenshots/Header-Head.png)
+   ![Screenshot of the header section](./client/src/assests/screenshots/Header.png) 
+
+   Display profile image when hovering over my name using Mouse Follower
+   
+![Screenshot of the header section with mouse follower showing profile image](./client/src/assests/screenshots/Header-Head.png)
 
 ### Introduction
 Implementation and customisation of an React typewriter package
 Further customisation of the Mouse Follower package
 A personal introduction. 
 
-![Screenshot of introduction section](./src/assests/screenshots/Introduction.png)
+![Screenshot of introduction section](./client/src/assests/screenshots/Introduction.png)
 
 ### Porjects
 Responsive design and animation
 Further customisation of the Mouse Follower package
 Descriptions and links to other projects
 
-![Screenshot of projects section](./src/assests/screenshots/Projects.png)
+![Screenshot of projects section](./client/src/assests/screenshots/Projects.png)
 
 ### Medium Blog Posts
 Carousel using pure HTML and CSS
@@ -66,15 +69,24 @@ API call fetches the following data from Meduim:
 * Image 
 * links
 
-![Screenshot of the blog carousel](./src/assests/screenshots/Writings.png)
+![Screenshot of the blog carousel](./client/src/assests/screenshots/Writings.png)
+
+### Email Form
+Implementation and customisation of an React Lottie package
+User is able to send me an email directly through the site
+
+![Screenshot of the blog carousel](./client/src/assests/screenshots/email-form.png)
 
 ### Footer
-Implementation and customisation of an React Lottie package
 Links to my LinkedIn and Github
 Secondary planetary navbar 
+Secondary option to send email by clicking on my name in the lower right corner
 
-![Screenshot of the footer section](./src/assests/screenshots/Footer.png)
-![Screenshot of footer section with mouse follower displaying navbar text](./src/assests/screenshots/Footer-Planet.png)
+![Screenshot of the footer section](./client/src/assests/screenshots/Footer.png)
+
+Display the section titles show where each planet navigates to
+
+![Screenshot of footer section with mouse follower displaying navbar text](./client/src/assests/screenshots/Footer-Planet.png)
 
 ## Contact
 

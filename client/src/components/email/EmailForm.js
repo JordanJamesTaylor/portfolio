@@ -3,7 +3,6 @@ import {NotificationContainer, NotificationManager} from 'react-notifications';
 import emailjs from '@emailjs/browser';
 import Lottie from 'react-lottie';
 import astronaut from '../../assests/astronaut.json'
-
 import 'react-notifications/lib/notifications.css';
 import './emailform.css';
 
@@ -45,7 +44,7 @@ export default function EmailForm() {
         createNotification('success');
         e.target.reset();
       }, (error) => {
-        console.log({ message: error.message });
+        console.log('HERE --->', { message: error });
         createNotification('error');
       });
     };

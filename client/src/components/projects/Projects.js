@@ -1,6 +1,7 @@
 import React from 'react';
 
 import spaceBackground from "../../assests/temp-space.jpg";
+import spaceInvadersImg from "../../assests/screenshots/space-invaders-1.png";
 import "./projects.css";
 
 export default function Projects() {
@@ -22,7 +23,7 @@ export default function Projects() {
     </div>
     
     <div className='project-card-b'> 
-      <img className='project-card-img' src={`${spaceBackground}`} alt='blog title image' data-cursor-text='Shoot Aliens!'/>
+      <img className='project-card-img' src={`${spaceInvadersImg}`} alt='blog title image' data-cursor-text='Shoot Aliens!'/>
       <h2 className='project-card-title' data-cursor-text='Shoot Aliens!'>Space Invaders</h2>
       <p className='project-card-text' data-cursor-text='Shoot Aliens!'>
         A Space Invaders clone. Here I endeavored to avoid using styling libraries so I could hone my HTML and CSS capabilities. The alien, laser, and player sprites are instances of classes; familiarizing myself with JS OOP.
