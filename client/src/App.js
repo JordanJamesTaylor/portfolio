@@ -65,11 +65,11 @@ export default function App() {
     skewingText: 1,
   });
   MouseFollower.registerGSAP(gsap);
-  
+
   return (
     <main className='App'>
       <header className='header-container'>
-        <Header className='desktop-view-nav' about={about} projects={projects} writings={writings} resume={resume} contact={contact} scrollToSection={scrollToSection}/>
+        <Header about={about} projects={projects} writings={writings} resume={resume} contact={contact} scrollToSection={scrollToSection} />
       </header>
       <section ref={about} className='about-container'>
         <About />
@@ -90,7 +90,7 @@ export default function App() {
         <EmailForm />
       </section>
       <footer className='footer-container'>
-        <Footer about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection}/>
+        <Footer about={about} projects={projects} writings={writings} resume={resume} scrollToSection={scrollToSection} />
       </footer>
     </main>
   );

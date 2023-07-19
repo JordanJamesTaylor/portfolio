@@ -1,0 +1,160 @@
+.orbital-paths-planets {
+    position: relative;
+    z-index: 0;
+}
+
+.orbital-paths img {
+    width: 60rem;
+}
+
+.sun, .projects-planet, .writings-planet, .resume-planet, .contact-planet {
+    position: absolute;
+    width: 5rem;
+}
+
+.sun {
+    top: 3.5rem;
+    left: -1rem;
+}
+
+.sun img {
+    width: 16rem;
+}
+
+.sun h1 {
+    padding-left: 10rem;
+}
+
+.projects-planet {
+    top: 19.5rem;
+    left: 9rem
+}
+
+.projects-planet img {
+    width: 10rem;
+} 
+
+.projects-planet h1 {
+    padding-left: 8rem;
+}
+
+.resume-planet {
+    top: 21rem;
+    left: 32rem;
+} 
+
+.contact-planet {
+    top: 38rem;
+    left: 34rem;
+}
+
+.contact-planet h1 {
+    padding-left: 5.5rem;
+}
+
+.resume-planet img {
+    width: 10rem;
+} 
+
+.resume-planet h1 {
+    padding-left: 6.5rem;
+} 
+
+.writings-planet {
+    top: 4rem;
+    left: 50rem;
+}
+
+.writings-planet img {
+    width: 15rem;
+}
+
+.writings-planet h1 {
+    padding-left: 9rem;
+} 
+
+.sun-img:hover, .about-planet-img:hover, .projects-planet-img:hover, .writings-planet-img:hover, .resume-planet-img:hover, .contact-planet-img:hover, .link-icons:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+#about-title, #projects-title, #writings-title, #resume-title, #contact-title {
+    position: relative;
+    font-family: 'Bruno Ace SC', 'cursive';
+    color: white;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
+}
+
+#projects-title {
+    margin-left: -1.5rem;
+}
+
+#writings-title {
+    margin: -0.5rem 0 0 1rem;
+}
+
+.intro {
+    align-self: flex-end;
+    width: 20rem;
+    margin: 0 0 13rem 3rem;
+}
+
+.intro-name {
+    font-family: 'Bruno Ace SC', 'cursive';
+    cursor: default;
+    color: #95C6FF;
+    cursor: none;
+}
+
+.link-icons {
+    margin: 2rem 1rem 0 0.7rem;
+    height: 2.5rem;
+    border-radius: 25px;
+}
+
+.link-icons:hover {
+    box-shadow: 0 0 0.5rem 0.5rem rgba(180, 214, 255, 0.3);
+}
+
+@media(0px <= width <= 1135px){
+    .writings-planet {
+        top: 4rem;
+        left: 23rem;
+    }
+}
+
+@media(953px <= width <= 1280px){
+    .desktop-header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .intro {
+        padding: 3rem;
+        margin: 0;
+        align-self: center;
+    }
+}
+
+@media(1200px <= width){
+    .desktop-header {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
