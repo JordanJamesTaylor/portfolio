@@ -39,7 +39,7 @@ export default function EmailForm() {
     } else if(document.getElementById("email-text").value == '') {
       createNotification('empty-message');
     } else {      
-      emailjs.sendForm('service_6pd41j4', 'template_eptp2za', form.current, 'pu7to8jlyx-v1mKa3')
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
         createNotification('success');
         e.target.reset();
@@ -70,11 +70,11 @@ export default function EmailForm() {
         <div className='email-form'>
             <form ref={form} onSubmit={sendEmail}>
               <div className='form-top'>
-                <div style={{ width: '45%' }}>
+                <div>
                 <label>Your Name</label>
                 <input id='user-name' type="text" name="user_name" placeholder='Enter your name...'/>
                 </div>
-                <div style={{ width: '45%' }}>
+                <div>
                 <label>Your Email</label>
                 <input id='user-email' type="email" name="user_email" placeholder='Enter your email...' />
                 </div>

@@ -13,7 +13,7 @@ export default function BlogItem({ index, post }) {
     };
 
     return (
-        <div id={index} className='blog-card' >
+        <article id={index} className='blog-card' >
             <div className='blog-card-img'>
                 <img src={`${post.thumbnail}`} alt='blog title image' />
             </div>
@@ -28,6 +28,6 @@ export default function BlogItem({ index, post }) {
                     <span style={{ flex: '1 1 auto'}}></span>
                     <span>Read on Medium</span>
             </a>
-        </div>
+        </article>
     );
 };

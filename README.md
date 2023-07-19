@@ -35,6 +35,7 @@ This was a website built to showcase my design and technical skills with HTML, C
 ### Header
 Bespoke sun and planet designs functioning as a navbar
 Implementation and customisation of the Cuberto Mouse Follower JS package
+Use of useState, useEffect, and useToggle React hooks
 Brief intro
 Links to my LinkedIn and Github profiles
 
@@ -60,7 +61,8 @@ Descriptions and links to other projects
 
 ### Medium Blog Posts
 Carousel using pure HTML and CSS
-Using Axios to retrieve my Medium blog posts
+Use of useState React hook  
+Use of Axios to retrieve my Medium blog posts
 API call fetches the following data from Meduim:
 * Title
 * First 500 words of post

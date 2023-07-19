@@ -1,26 +1,3 @@
-@media(0px <= width <= 999px) {
-    .email-form-header h1:after {
-        content: 'Message Me!';
-    }
-}
-
-@media(width <= 573px) {
-    .email-btn-text:before {
-        content: 'Shoot!';
-    }
-}
-
-@media(574px <= width) {
-    .email-btn-text:before {
-        content: 'Send Email!';
-    }
-}
-
-@media(1000px <= width) {
-    .email-form-header h1:after {
-        content: 'Send Me a Message!';
-    }
-}
 
 .email-form-lottie {
     display: flex;
@@ -64,6 +41,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.form-top div {
+    width: 45%;
 }
 
 .email-form input {
@@ -144,4 +125,37 @@
     align-items: center;
     height: 200px;
     width: 200px;
+}
+
+@media(width <= 573px) {
+    .email-btn-text:before {
+        content: 'Shoot!';
+    }
+}
+
+@media(574px <= width) {
+    .email-btn-text:before {
+        content: 'Send Email!';
+    }
+}
+
+@media(0px <= width <= 999px) {
+    .email-form-header h1:after {
+        content: 'Message Me!';
+    }
+
+    .form-top {
+        flex-direction: column;
+    }
+
+    .form-top div {
+        width: 100%;
+        margin-top: 1rem;
+    }    
+}
+
+@media(1000px <= width) {
+    .email-form-header h1:after {
+        content: 'Send Me a Message!';
+    }
 }
